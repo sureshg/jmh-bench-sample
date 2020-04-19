@@ -43,6 +43,8 @@ jobs:
     
     - name: Deploy to GitHub Packages
       if: env.GITHUB_DEPLOY == 'true'
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         # ./mvnw deploy -Dregistry=https://maven.pkg.github.com/${{ github.repository_owner }} -Dtoken=${{ secrets.GITHUB_TOKEN }}
         ./mvnw deploy
