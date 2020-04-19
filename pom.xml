@@ -8,26 +8,83 @@
   <artifactId>jmh-bench-sample</artifactId>
   <version>1.0.0</version>
   <packaging>jar</packaging>
+
   <name>Sample Bench</name>
+  <description>A sample repo for JMH benchmark project.</description>
+  <url>https://github.com/sureshg/jmh-bench-sample</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.build.outputTimestamp>2020-04-19T01:51:00Z</project.build.outputTimestamp>
     <jmh.version>1.23</jmh.version>
     <javac.target>11</javac.target>
     <uberjar.name>benchmarks</uberjar.name>
   </properties>
 
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+
+  <inceptionYear>2020</inceptionYear>
+  <scm>
+    <connection>scm:git:https://github.com/sureshg/jmh-bench-sample.git</connection>
+    <developerConnection>scm:git:https://github.com/sureshg/jmh-bench-sample.git
+    </developerConnection>
+    <url>https://github.com/sureshg/jmh-bench-sample</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <issueManagement>
+    <system>github</system>
+    <url>https://github.com/sureshg/jmh-bench-sample/issues</url>
+  </issueManagement>
+
+  <developers>
+    <developer>
+      <name>Suresh</name>
+      <url>https://suresh.dev</url>
+      <organization>Github</organization>
+      <organizationUrl>https://github.com/sureshg/jmh-bench-sample</organizationUrl>
+    </developer>
+  </developers>
+
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>sureshg</name>
+      <url>https://maven.pkg.github.com/sureshg/jmh-bench-sample</url>
+    </repository>
+  </distributionManagement>
+
+  <!-- Dependency management -->
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.openjdk.jmh</groupId>
+        <artifactId>jmh-core</artifactId>
+        <version>${jmh.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.openjdk.jmh</groupId>
+        <artifactId>jmh-generator-annprocess</artifactId>
+        <version>${jmh.version}</version>
+        <scope>provided</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <!-- Dependencies -->
   <dependencies>
     <dependency>
       <groupId>org.openjdk.jmh</groupId>
       <artifactId>jmh-core</artifactId>
-      <version>${jmh.version}</version>
     </dependency>
     <dependency>
       <groupId>org.openjdk.jmh</groupId>
       <artifactId>jmh-generator-annprocess</artifactId>
-      <version>${jmh.version}</version>
-      <scope>provided</scope>
     </dependency>
   </dependencies>
 
@@ -97,8 +154,12 @@
             <configuration>
               <rules>
                 <requireMavenVersion>
+                  <message>Maven 3.6.0 or higher required.</message>
                   <version>[3.6,)</version>
                 </requireMavenVersion>
+                <requireJavaVersion>
+                  <version>${javac.target}</version>
+                </requireJavaVersion>
               </rules>
             </configuration>
           </execution>
