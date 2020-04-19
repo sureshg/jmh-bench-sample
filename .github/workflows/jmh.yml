@@ -38,7 +38,7 @@ jobs:
         restore-keys: ${{ runner.os }}-m2
       
     - name: Build with Maven
-      if: env.TT == "true"
+      if: env.TT == 'true'
       run: ./mvnw -B verify
     
     - name: Deploy to GitHub Packages
