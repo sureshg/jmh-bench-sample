@@ -1,4 +1,4 @@
-## [JMH][jmh] Benchmark Sample   ![JMH Sample CI][badge]
+## [JMH][jmh] Benchmark Sample   [![JMH Sample CI][badge]][github-workflow]
 
    A sample repo for JMH benchmark project and publish the artifacts to [Github Package Registry][github-packages].
 
@@ -20,6 +20,7 @@ $ java -jar target/benchmarks.jar -prof perfasm
 [hsdis]: https://github.com/AdoptOpenJDK/jitwatch/wiki/Building-hsdis	"hsdis"
 [badge]: https://github.com/sureshg/jmh-bench-sample/workflows/JMH%20Sample%20CI/badge.svg
 [github-packages]: https://github.com/sureshg/jmh-bench-sample/packages
+[github-workflow]: https://github.com/sureshg/jmh-bench-sample/actions
 
 ##### Credits
 
