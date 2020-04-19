@@ -1,8 +1,6 @@
-## [JMH][jmh] Benchmark Sample 
+## [JMH][jmh] Benchmark Sample   ![JMH Sample CI][badge]
 
-![JMH Sample CI][badge]
-
-  A sample repo for JMH benchmark project and publishes the artifacts to [Github Package Rregistry][github-regitry].
+   A sample repo for JMH benchmark project and publish the artifacts to [Github Package Rregistry][github-regitry].
 
 - #### Build & Run
 
