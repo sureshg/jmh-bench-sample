@@ -44,9 +44,12 @@ jobs:
     - name: Deploy to GitHub Packages
       if: env.GITHUB_DEPLOY == 'true'
       env:
+        GITHUB_USER: ${{ github.repository_owner }}  
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         # ./mvnw deploy -Dregistry=https://maven.pkg.github.com/${{ github.repository_owner }} -Dtoken=${{ secrets.GITHUB_TOKEN }}
+        mkdir ~/.m2
+        echo "<settings><servers><server><id>github</id><username>${GITHUB_USER}</username><password>${GITHUB_TOKEN}</password></server></servers></settings>" > ~/.m2/settings.xml
         ./mvnw deploy
       
     - name: Run JMH Benchmark
