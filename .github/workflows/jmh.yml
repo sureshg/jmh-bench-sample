@@ -44,7 +44,8 @@ jobs:
     - name: Deploy to GitHub Packages
       if: env.GITHUB_DEPLOY == 'true'
       run: |
-        ./mvnw deploy -Dregistry=https://maven.pkg.github.com/${{ github.repository_owner }} -Dtoken=${{ secrets.GITHUB_TOKEN }}
+        # ./mvnw deploy -Dregistry=https://maven.pkg.github.com/${{ github.repository_owner }} -Dtoken=${{ secrets.GITHUB_TOKEN }}
+        ./mvnw deploy
       
     - name: Run JMH Benchmark
       if: success()
