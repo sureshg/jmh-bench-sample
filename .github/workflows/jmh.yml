@@ -49,7 +49,7 @@ jobs:
     - name: Build & Deploy to GitHub Packages
       if: env.GITHUB_DEPLOY == 'true'
       run: |
-        ./mvnw --settings .mvn/settings.xml deploy
+        ./mvnw --settings .mvn/settings.xml deploy -X
       env:
         GITHUB_USER: ${{ github.repository_owner }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
