@@ -6,7 +6,7 @@
 
   <groupId>dev.suresh</groupId>
   <artifactId>jmh-bench-sample</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>Sample Bench</name>
@@ -56,8 +56,14 @@
       <id>github</id>
       <name>sureshg</name>
       <url>https://maven.pkg.github.com/sureshg/jmh-bench-sample</url>
-      <uniqueVersion>false</uniqueVersion>
+      <uniqueVersion>true</uniqueVersion>
     </repository>
+    <snapshotRepository>
+      <id>github</id>
+      <name>sureshg</name>
+      <url>https://maven.pkg.github.com/sureshg/jmh-bench-sample</url>
+      <uniqueVersion>false</uniqueVersion>
+    </snapshotRepository>
   </distributionManagement>
 
   <!-- Dependency management -->
