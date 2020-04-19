@@ -1,5 +1,8 @@
 name: JMH Sample CI
 
+env:
+  deploy: true
+
 on:
   schedule:
     - cron: "0 0 * * 0"    
@@ -11,6 +14,8 @@ on:
 jobs:
   build:
     
+    env:
+      TT: 'true' 
     runs-on: ${{ matrix.os }}
     strategy:
        matrix:
@@ -33,7 +38,11 @@ jobs:
         restore-keys: ${{ runner.os }}-m2
       
     - name: Build with Maven
+      if: env.TT == "true"
       run: ./mvnw -B verify
+    
+    - name: Deploy to GitHub Packages
+      run: ./mvnw deploy -Dregistry=https://maven.pkg.github.com/${{ github.repository_owner }} -Dtoken=${{ secrets.GITHUB_TOKEN }}
       
     - name: Run JMH Benchmark
       if: success()
