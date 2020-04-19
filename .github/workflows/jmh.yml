@@ -1,7 +1,7 @@
 name: JMH Sample CI
 
 env:
-  deploy: true
+  GH_DEPLOY: 'false'
 
 on:
   schedule:
@@ -13,9 +13,9 @@ on:
 
 jobs:
   build:
-    
-    env:
-      TT: 'true' 
+   
+    name: Run JMH Benchmark.
+    timeout-minutes: 15
     runs-on: ${{ matrix.os }}
     strategy:
        matrix:
@@ -38,10 +38,11 @@ jobs:
         restore-keys: ${{ runner.os }}-m2
       
     - name: Build with Maven
-      if: env.TT == 'true'
+      if: env.GH_DEPLOY != 'true'
       run: ./mvnw -B verify
     
     - name: Deploy to GitHub Packages
+      if: env.GH_DEPLOY == 'true'
       run: ./mvnw deploy -Dregistry=https://maven.pkg.github.com/${{ github.repository_owner }} -Dtoken=${{ secrets.GITHUB_TOKEN }}
       
     - name: Run JMH Benchmark
@@ -51,6 +52,7 @@ jobs:
          mkdir staging && cp target/benchmarks.jar staging
          
     - uses: actions/upload-artifact@v1
+      if: env.GH_DEPLOY != 'true'
       with:
         name: Package
         path: staging      
