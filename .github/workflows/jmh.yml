@@ -2,7 +2,7 @@ name: JMH CI
 
 env:
   GITHUB_DEPLOY: 'true'
-  TEST : 'test'
+
 on:
   push:
     branches:
@@ -25,6 +25,8 @@ jobs:
        matrix:
          os: [ubuntu-latest]
          java: ['11', '14']
+    outputs:
+      sha-version: ${{ steps.sha-version.outputs.version }}
 
     steps:
     - name: Check out the source code
@@ -47,8 +49,10 @@ jobs:
       run: ./mvnw -B verify
 
     - name: Create Version Number
+      id: sha-version
       run: |
-          echo $(echo $GITHUB_SHA | cut -c1-7) > .version
+        SHA_VERSION=$(echo $GITHUB_SHA | cut -c1-7)
+        echo "::set-output name=version::$SHA_VERSION"
 
     - name: Build & Deploy to GitHub Packages
       if: env.GITHUB_DEPLOY == 'true'
@@ -68,4 +72,21 @@ jobs:
       if: env.GITHUB_DEPLOY != 'true'
       with:
         name: Package
-        path: staging      
+        path: staging  
+      
+  release:
+    name: Release new version.
+    needs: [build]
+    if: "!contains(github.event.head_commit.message, 'skip ci')"
+    runs-on: ${{ matrix.os }}
+    strategy:
+       matrix:
+         os: [ubuntu-latest]
+         java: ['14']
+    steps:
+      - name: check
+        run: |
+          echo "The SHA version from build job: ${{ needs.build.outputs.version }}"
+       
+
+       
