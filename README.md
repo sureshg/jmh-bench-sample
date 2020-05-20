@@ -1,11 +1,11 @@
 ## [JMH][jmh] Benchmark Sample   [![JMH Sample CI][badge]][github-workflow]
 
-   A sample repo for JMH benchmark project and publish the artifacts to [Github Package Registry][github-packages].
+   A sample repo for building **Java** and **Kotlin** benchmarks with JMH and publish the artifacts to [Github Package Registry][github-packages].
 
 - #### Build & Run
 
 ```bash
-$ ./mvnw verify 
+$ ./mvnw clean verify 
 $ java -jar target/benchmarks.jar
 ```
 
@@ -15,12 +15,13 @@ $ java -jar target/benchmarks.jar
 $ java -jar target/benchmarks.jar -prof perfasm
 ```
 
-
 [jmh]: JMHhttps://openjdk.java.net/projects/code-tools/jmh/	"JMH"
 [hsdis]: https://github.com/AdoptOpenJDK/jitwatch/wiki/Building-hsdis	"hsdis"
-[badge]: https://github.com/sureshg/jmh-bench-sample/workflows/JMH%20Sample%20CI/badge.svg
+[badge]: https://img.shields.io/github/workflow/status/sureshg/jmh-bench-sample/JMH%20Sample%20CI?label=JMH%20Build&style=for-the-badge
+[github-badge]: https://github.com/sureshg/jmh-bench-sample/workflows/JMH%20Sample%20CI/badge.svg
 [github-packages]: https://github.com/sureshg/jmh-bench-sample/packages
 [github-workflow]: https://github.com/sureshg/jmh-bench-sample/actions
+[jmh-archetypes]: https://github.com/openjdk/jmh/tree/master/jmh-archetypes
 
 ##### Credits
 
