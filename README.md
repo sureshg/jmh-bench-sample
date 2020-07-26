@@ -23,6 +23,10 @@ $ java -jar target/benchmarks.jar -prof perfasm
 [github-workflow]: https://github.com/sureshg/jmh-bench-sample/actions
 [jmh-archetypes]: https://github.com/openjdk/jmh/tree/master/jmh-archetypes
 
+##### Misc
+ - [JMH Samples](https://github.com/openjdk/jmh/tree/master/jmh-samples/src/main/java/org/openjdk/jmh/samples)
+ - [Kotlin Benchmarks](https://github.com/Kotlin/kotlin-benchmarks)
+
 ##### Credits
 
 ---
