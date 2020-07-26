@@ -1,4 +1,4 @@
-## [JMH](jmh) Benchmark Sample   [![JMH Sample CI][badge]][github-workflow]
+## [JMH][jmh] Benchmark Sample   [![JMH Sample CI][badge]][github-workflow]
 
    A sample repo for building **Java** and **Kotlin** benchmarks with JMH and publish the artifacts to [Github Package Registry][github-packages].
 
@@ -15,7 +15,7 @@ $ java -jar target/benchmarks.jar
 $ java -jar target/benchmarks.jar -prof perfasm
 ```
 
-[jmh]: JMHhttps://openjdk.java.net/projects/code-tools/jmh/	"JMH"
+[jmh]: https://openjdk.java.net/projects/code-tools/jmh/	"JMH"
 [hsdis]: https://github.com/AdoptOpenJDK/jitwatch/wiki/Building-hsdis	"hsdis"
 [badge]: https://img.shields.io/github/workflow/status/sureshg/jmh-bench-sample/JMH%20Sample%20CI?label=JMH%20Build&style=for-the-badge
 [github-badge]: https://github.com/sureshg/jmh-bench-sample/workflows/JMH%20Sample%20CI/badge.svg
