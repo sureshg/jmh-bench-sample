@@ -1,4 +1,4 @@
-## [JMH][jmh] Benchmark Sample   [![JMH Sample CI][badge]][github-workflow]
+## [JMH](jmh) Benchmark Sample   [![JMH Sample CI][badge]][github-workflow]
 
    A sample repo for building **Java** and **Kotlin** benchmarks with JMH and publish the artifacts to [Github Package Registry][github-packages].
 
