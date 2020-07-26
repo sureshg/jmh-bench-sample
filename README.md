@@ -25,8 +25,9 @@ $ java -jar target/benchmarks.jar -prof perfasm
 
 ##### Misc
  - [JMH Samples](https://github.com/openjdk/jmh/tree/master/jmh-samples/src/main/java/org/openjdk/jmh/samples)
+ - [JMH Kotlin Archetype](https://github.com/openjdk/jmh/tree/master/jmh-archetypes/jmh-kotlin-benchmark-archetype)
  - [Kotlin Benchmarks](https://github.com/Kotlin/kotlin-benchmarks)
-
+ 
 ##### Credits
 
 ---
