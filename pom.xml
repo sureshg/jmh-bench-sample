@@ -26,7 +26,7 @@
     <kotlin.compiler.jvmTarget>${javac.target}</kotlin.compiler.jvmTarget>
 
     <!-- Dependency versions -->
-    <jmh.version>1.24</jmh.version>
+    <jmh.version>1.25</jmh.version>
     <jmh.generator>default</jmh.generator>
     <slf4j.version>1.7.30</slf4j.version>
     <uberjar.name>benchmarks</uberjar.name>
