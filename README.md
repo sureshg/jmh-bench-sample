@@ -52,7 +52,7 @@ $ ./mvnw --version
 $ ./mvnw clean versions:display-dependency-updates versions:display-plugin-updates
 ```
 
-##### Credits
+##### :copyright: Credits
 
 ---
 
