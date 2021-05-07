@@ -22,12 +22,12 @@
     <!-- Compiler versions -->
     <javac.target>11</javac.target>
     <maven.version>3.6</maven.version>
-    <kotlin.version>1.5.0-RC</kotlin.version>
+    <kotlin.version>1.5.0</kotlin.version>
     <kotlin.use.ir>true</kotlin.use.ir>
     <kotlin.compiler.jvmTarget>${javac.target}</kotlin.compiler.jvmTarget>
 
     <!-- Dependency versions -->
-    <jmh.version>1.29</jmh.version>
+    <jmh.version>1.30</jmh.version>
     <jmh.generator>default</jmh.generator>
     <!-- or "asm", or "reflection" -->
     <slf4j.version>1.7.30</slf4j.version>

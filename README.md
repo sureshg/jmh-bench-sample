@@ -49,7 +49,7 @@ $ java -jar target/benchmarks.jar -prof perfasm
 # Maven and dependencies updates.
 $ mvn -N io.takari:maven:wrapper -Dmaven=3.8.1
 $ ./mvnw --version
-$ ./mvnw clean versions:display-dependency-updates versions:display-plugin-updates
+$ ./mvnw clean versions:display-dependency-updates versions:display-plugin-updates versions:display-property-updates
 ```
 
 ##### :copyright: Credits
