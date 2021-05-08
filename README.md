@@ -4,6 +4,7 @@
 [![JMH][jmh_img]][jmh_url]
 [![Kotlin release][kt_img]][kt_url]
 [![OpenJDK Version][java_img]][java_url]
+[![Language grade: Java][lgtm_img]][lgtm_url]
 [![Style guide][sty_img]][sty_url]
 
 A sample repo for building **Java** and **Kotlin** benchmarks with JMH and publish the artifacts
@@ -77,5 +78,8 @@ This is a slightly modified version of [Aleksey Shipilev's](https://github.com/s
 
 [sty_url]: https://kotlinlang.org/docs/reference/coding-conventions.html
 [sty_img]: https://img.shields.io/badge/style-Kotlin--Official-40c4ff.svg?style=for-the-badge&logo=kotlin&logoColor=40c4ff
+
+[lgtm_url]: https://lgtm.com/projects/g/sureshg/jmh-bench-sample/context:java
+[lgtm_img]: https://img.shields.io/lgtm/grade/java/github/sureshg/jmh-bench-sample.svg?logo=lgtm&style=for-the-badge
 
 [hsdis]: https://github.com/AdoptOpenJDK/jitwatch/wiki/Building-hsdis
