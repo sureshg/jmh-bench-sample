@@ -27,7 +27,7 @@
     <kotlin.compiler.jvmTarget>${javac.target}</kotlin.compiler.jvmTarget>
 
     <!-- Dependency versions -->
-    <jmh.version>1.30</jmh.version>
+    <jmh.version>1.31</jmh.version>
     <jmh.generator>default</jmh.generator>
     <!-- or "asm", or "reflection" -->
     <slf4j.version>1.7.30</slf4j.version>
