@@ -35,13 +35,13 @@ jobs:
       - name: Check out the source code
         uses: actions/checkout@v2
 
-      - name: Download JDK ${{ matrix.java }}
+      - name: Download JDK ${{ matrix.jdk }}
         id: download-jdk
         uses: sormuras/download-jdk@v1
         with:
-          feature: ${{ matrix.java }}
+          feature: ${{ matrix.jdk }}
 
-      - name: Set up JDK ${{ matrix.java }}
+      - name: Set up JDK ${{ matrix.jdk }}
         uses: actions/setup-java@v2
         with:
           distribution: jdkfile
