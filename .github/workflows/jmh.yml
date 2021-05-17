@@ -6,10 +6,10 @@ env:
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
     branches:
-      - master
+      - main
   schedule:
     - cron: "0 0 * * *"
 
@@ -22,8 +22,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest]
-        java: ['11', '14']
+        os: [ ubuntu-latest, macos-latest ]
+        java: [ '11', '14' ]
     outputs:
       sha-version: ${{ steps.sha-version.outputs.version }}
 
@@ -76,13 +76,13 @@ jobs:
 
   release:
     name: Release new version.
-    needs: [build]
+    needs: [ build ]
     if: "!contains(github.event.head_commit.message, 'skip ci')"
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest]
-        java: ['14']
+        os: [ ubuntu-latest ]
+        java: [ '14' ]
     steps:
       - name: check
         run: |
