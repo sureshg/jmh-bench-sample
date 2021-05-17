@@ -6,11 +6,10 @@ import java.util.concurrent.TimeUnit.NANOSECONDS
 import java.util.concurrent.TimeUnit.SECONDS
 import kotlin.math.*
 
-
 @BenchmarkMode(Mode.AverageTime)
 @OutputTimeUnit(NANOSECONDS)
-@Warmup(iterations = 5, time = 1, timeUnit = SECONDS)
-@Measurement(iterations = 5, time = 1, timeUnit = SECONDS)
+@Warmup(iterations = 3, time = 1, timeUnit = SECONDS)
+@Measurement(iterations = 3, time = 1, timeUnit = SECONDS)
 @Fork(1)
 @State(Scope.Benchmark)
 open class KotlinBench {

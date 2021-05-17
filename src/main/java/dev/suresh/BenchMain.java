@@ -14,8 +14,8 @@ import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.State;
 import org.openjdk.jmh.annotations.Warmup;
 
-@Warmup(iterations = 3)
-@Measurement(iterations = 3)
+@Warmup(iterations = 2)
+@Measurement(iterations = 2)
 @BenchmarkMode(Mode.SingleShotTime)
 @OutputTimeUnit(TimeUnit.SECONDS)
 @Fork(1)
@@ -25,7 +25,7 @@ public class BenchMain {
   @Param("2")
   int min;
 
-  @Param("1000")
+  @Param("100")
   int max;
 
   @Benchmark
