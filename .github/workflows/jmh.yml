@@ -67,7 +67,7 @@ jobs:
           java -jar target/benchmarks.jar
           mkdir staging && cp target/benchmarks.jar staging
 
-      - uses: actions/upload-artifact@v1
+      - uses: actions/upload-artifact@v2.2.3
         if: env.GITHUB_DEPLOY != 'true'
         with:
           name: Package
