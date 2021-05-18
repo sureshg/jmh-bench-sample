@@ -7,9 +7,15 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - 'docs/**'
+      - LICENSE
+      - README.md
+
   pull_request:
     branches:
       - main
+
   schedule:
     - cron: "0 0 * * *"
 
@@ -31,6 +37,15 @@ jobs:
     steps:
       - name: Check out the source code
         uses: actions/checkout@v2
+
+      - name: Print Env
+        shell: bash
+        run: |
+          echo "GITHUB_ENV=$GITHUB_ENV"
+          echo "GITHUB_PATH=$GITHUB_PATH"
+          echo "JAVA_HOME=$JAVA_HOME_11_X64"
+          # echo "JAVA_HOME=$JAVA_HOME_11_X64" >> $GITHUB_ENV
+          # echo "$JAVA_HOME_11_X64/bin" >> $GITHUB_PATH
 
       - name: Download JDK ${{ matrix.jdk }}
         id: download-jdk
