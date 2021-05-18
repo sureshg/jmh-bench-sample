@@ -65,10 +65,10 @@ jobs:
       - name: Maven Build
         run: ./mvnw -B verify
 
-      - name: Deploy to GitHub Packages
+      - name: Deploy to GitHub Packages (Linux)
         if: env.GITHUB_DEPLOY == 'true' && runner.os == 'Linux'
         run: |
-          ./mvnw --settings .mvn/settings.xml deploy
+          ./mvnw --settings .mvn/settings.xml clean deploy
         env:
           GITHUB_USER: ${{ github.repository_owner }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
