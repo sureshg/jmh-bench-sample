@@ -111,10 +111,10 @@ jobs:
           java -jar target/benchmarks.jar -rf json -rff $result_file
           mkdir staging && cp {$result_file,target/benchmarks.jar} staging
 
-      - name: Uploading ${{ matrix.os }} benchmarks.jar
+      - name: Uploading ${{ matrix.os }} JMH artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: JMH-Results
+          name: Benchmark-Results
           path: staging
           if-no-files-found: error
 
