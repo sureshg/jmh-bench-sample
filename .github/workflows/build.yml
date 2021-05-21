@@ -129,6 +129,3 @@ jobs:
         shell: bash
         run: |
           echo "The SHA version from build job: ${{ needs.build.outputs.sha-version }}"
-       
-
-       
