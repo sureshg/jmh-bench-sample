@@ -43,6 +43,7 @@ $ java -jar target/benchmarks.jar -prof perfasm
 - [JMH Visualizer](https://github.com/jzillmann/jmh-visualizer)
 - [JMH Gradle Plugin](https://github.com/melix/jmh-gradle-plugin)
 - [JMH Gradle Report](https://github.com/jzillmann/gradle-jmh-report)
+- [Github Action - Java with Maven](https://docs.github.com/en/actions/guides/building-and-testing-java-with-maven)
 
 ##### :hammer_and_wrench: Misc
 
