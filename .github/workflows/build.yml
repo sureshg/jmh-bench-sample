@@ -107,14 +107,14 @@ jobs:
         if: success()
         shell: bash
         run: |
-          java -jar target/benchmarks.jar
-          mkdir staging && cp target/benchmarks.jar staging
+          result_file=jmh-result-${{ matrix.os }}.json
+          java -jar target/benchmarks.jar -rf json -rff $result_file
+          mkdir staging && cp {$result_file,target/benchmarks.jar} staging
 
       - name: Uploading ${{ matrix.os }} benchmarks.jar
         uses: actions/upload-artifact@v2
-        if: success() && env.GITHUB_DEPLOY != 'true'
         with:
-          name: Package
+          name: JMH-Results
           path: staging
           if-no-files-found: error
 
