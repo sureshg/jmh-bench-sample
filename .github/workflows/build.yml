@@ -49,13 +49,22 @@ jobs:
       - name: Check out the source code
         uses: actions/checkout@v2
 
-      - name: Download JDK ${{ matrix.jdk }}
+      - name: Download OpenJDK ${{ matrix.jdk }}
         id: download-jdk
         uses: sormuras/download-jdk@v1
         with:
           feature: ${{ matrix.jdk }}
 
-      - name: Set up JDK ${{ matrix.jdk }}
+      - name: Download OpenJDK (fallback)
+        if: ${{ false }}
+        run: |
+          download_url="https://download.java.net/java/early_access/loom/7/openjdk-17-loom+7-342_macos-x64_bin.tar.gz"
+          wget -O $RUNNER_TEMP/java_package.tar.gz $download_url
+        # distribution: 'jdkfile'
+        # jdkFile: ${{ runner.temp }}/java_package.tar.gz
+
+      - name: Set up OpenJDK ${{ matrix.jdk }}
+        id: setup-java
         uses: actions/setup-java@v2
         if: always() && steps.download-jdk.outcome == 'success'
         with:
@@ -68,6 +77,7 @@ jobs:
         run: |
           echo "steps.download-jdk.outputs.file    = ${{ steps.download-jdk.outputs.file }}"
           echo "steps.download-jdk.outputs.version = ${{ steps.download-jdk.outputs.version }}"
+          echo "steps.setup-java.outputs.path      = ${{ steps.setup-java.outputs.path }}"
           echo "env.JDK_FILE                       = ${{ env.JDK_FILE }}"
           echo "env.JDK_VERSION                    = ${{ env.JDK_VERSION }}"
           echo "GITHUB_ENV                         = $GITHUB_ENV"
