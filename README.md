@@ -77,7 +77,7 @@ This is a slightly modified version of [Aleksey Shipilev's](https://github.com/s
 [gha_img]: https://github.com/sureshg/jmh-bench-sample/actions/workflows/build.yml/badge.svg?branch=main
 [shieldio_img]: https://img.shields.io/github/workflow/status/sureshg/jmh-bench-sample/JMH%20CI/main?color=green&label=JMH%20CI%20Build&logo=Github-Actions&logoColor=green&style=for-the-badge
 
-[sty_url]: https://kotlinlang.org/docs/reference/coding-conventions.html
+[sty_url]: https://kotlinlang.org/docs/coding-conventions.html
 [sty_img]: https://img.shields.io/badge/style-Kotlin--Official-40c4ff.svg?style=for-the-badge&logo=kotlin&logoColor=40c4ff
 
 [lgtm_url]: https://lgtm.com/projects/g/sureshg/jmh-bench-sample/context:java
