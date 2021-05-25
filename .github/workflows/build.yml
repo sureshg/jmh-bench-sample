@@ -60,8 +60,6 @@ jobs:
         run: |
           download_url="https://download.java.net/java/early_access/loom/7/openjdk-17-loom+7-342_macos-x64_bin.tar.gz"
           wget -O $RUNNER_TEMP/java_package.tar.gz $download_url
-        # distribution: 'jdkfile'
-        # jdkFile: ${{ runner.temp }}/java_package.tar.gz
 
       - name: Set up OpenJDK ${{ matrix.jdk }}
         id: setup-java
@@ -71,6 +69,7 @@ jobs:
           distribution: jdkfile
           java-version: ${{ env.JDK_VERSION }}
           jdkFile: ${{ env.JDK_FILE }}
+        # jdkFile: ${{ runner.temp }}/java_package.tar.gz
 
       - name: Print Env
         shell: bash
