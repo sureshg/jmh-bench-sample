@@ -73,7 +73,7 @@ This is a slightly modified version of [Aleksey Shipilev's](https://github.com/s
 [java_url]: https://jdk.java.net/
 [java_img]: https://img.shields.io/badge/OpenJDK-jdk--17-red?logo=java&style=for-the-badge&logoColor=red
 
-[gha_url]: https://github.com/sureshg/jmh-bench-sample/actions
+[gha_url]: https://github.com/sureshg/jmh-bench-sample/actions/workflows/build.yml
 [gha_img]: https://github.com/sureshg/jmh-bench-sample/actions/workflows/build.yml/badge.svg?branch=main
 [shieldio_img]: https://img.shields.io/github/workflow/status/sureshg/jmh-bench-sample/JMH%20CI/main?color=green&label=JMH%20CI%20Build&logo=Github-Actions&logoColor=green&style=for-the-badge
 

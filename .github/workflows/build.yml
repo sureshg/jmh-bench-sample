@@ -117,15 +117,24 @@ jobs:
         if: success()
         shell: bash
         run: |
-          result_file=jmh-result-${{ matrix.os }}.json
-          java -jar target/benchmarks.jar -rf json -rff $result_file
-          mkdir staging && cp {$result_file,target/benchmarks.jar} staging
+          java -jar target/benchmarks.jar -rf json -rff jmh-result-${{ matrix.os }}.json
+          # mkdir staging && cp {$result_file,target/benchmarks.jar} staging
 
-      - name: Uploading ${{ matrix.os }} JMH artifacts
+      - name: Uploading JMH ${{ matrix.os }} benchmark results
         uses: actions/upload-artifact@v2
         with:
-          name: Benchmark-Results
-          path: staging
+          name: jmh-result-${{ matrix.os }}.json
+          path: |
+            *.json
+          if-no-files-found: error
+
+      - name: Uploading JMH ${{ matrix.os }} benchmark jar
+        if: runner.os == 'Linux'
+        uses: actions/upload-artifact@v2
+        with:
+          name: benchmarks-${{ matrix.os }}.jar
+          path: |
+            target/benchmarks.jar
           if-no-files-found: error
 
   release:
