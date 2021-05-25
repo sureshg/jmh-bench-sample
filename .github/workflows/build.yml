@@ -81,7 +81,8 @@ jobs:
           echo "env.JDK_VERSION                    = ${{ env.JDK_VERSION }}"
           echo "GITHUB_ENV                         = $GITHUB_ENV"
           echo "GITHUB_PATH                        = $GITHUB_PATH"
-          echo "JAVA_HOME                          = $JAVA_HOME_11_X64"
+          echo "JAVA_HOME                          = $JAVA_HOME"
+          echo "JAVA_HOME_11                       = $JAVA_HOME_11_X64"
           # echo "JAVA_HOME=$JAVA_HOME_11_X64" >> $GITHUB_ENV
           # echo "$JAVA_HOME_11_X64/bin" >> $GITHUB_PATH
 
