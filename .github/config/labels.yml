@@ -2,7 +2,7 @@
   description: Something isn't working
   color: d73a4a
 - name: doc
-  description: Improvements or additions to documentation
+  description: Improvements to documentation
   color: 0075ca
 - name: duplicate
   description: This issue or pull request already exists
