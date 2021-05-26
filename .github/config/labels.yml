@@ -1,0 +1,24 @@
+- name: bug
+  description: Something isn't working
+  color: d73a4a
+- name: doc
+  description: Improvements or additions to documentation
+  color: 0075ca
+- name: duplicate
+  description: This issue or pull request already exists
+  color: cfd3d7
+- name: feature
+  color: 1d76db
+  description: New features
+- name: enhancement
+  description: Enhancement of existing functionality
+  color: 0366d6
+- name: deprecated
+  description: Deprecating API
+  color: f4c21d
+- name: removed
+  description: Removing API
+  color: e4b21d
+- name: tests
+  description: Enhancement of tests
+  color: 0e8a16
