@@ -22,3 +22,12 @@
 - name: tests
   description: Enhancement of tests
   color: 0e8a16
+- name: java
+  description: Java/JDK changes
+  color: 03d0d6
+- name: gradle
+  description: Gradle changes
+  color: d0d603
+- name: maven
+  description: Maven changes
+  color: d60366
