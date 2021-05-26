@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - config/labels.yml
+      - .github/config/labels.yml
 
 jobs:
   build:
@@ -16,4 +16,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          manifest: config/labels.yml
+          manifest: .github/config/labels.yml
