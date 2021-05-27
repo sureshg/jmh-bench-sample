@@ -65,13 +65,13 @@ This is a slightly modified version of [Aleksey Shipilev's](https://github.com/s
 [jmh-archetypes]: https://github.com/openjdk/jmh/tree/master/jmh-archetypes
 
 [kt_url]: https://github.com/JetBrains/kotlin/releases/latest
-[kt_img]: https://img.shields.io/github/release/JetBrains/kotlin.svg?include_prereleases&label=Kotlin&logo=kotlin&style=for-the-badge
+[kt_img]: https://img.shields.io/github/v/release/Jetbrains/kotlin?color=7f53ff&label=Kotlin&logo=kotlin&logoColor=7f53ff&style=for-the-badge
 
 [jmh_url]: https://github.com/openjdk/jmh#java-microbenchmark-harness-jmh
-[jmh_img]: https://img.shields.io/maven-central/v/org.openjdk.jmh/jmh-core?color=magenta&label=Jmh-Core&logo=apache%20maven&logoColor=magenta&style=for-the-badge
+[jmh_img]: https://img.shields.io/maven-central/v/org.openjdk.jmh/jmh-core?color=cd2237&label=Jmh-Core&logo=apache%20maven&logoColor=cd2237&style=for-the-badge
 
 [java_url]: https://jdk.java.net/
-[java_img]: https://img.shields.io/badge/OpenJDK-jdk--17-red?logo=java&style=for-the-badge&logoColor=red
+[java_img]: https://img.shields.io/badge/OpenJDK-jdk--17-ea791d?logo=java&style=for-the-badge&logoColor=ea791d
 
 [gha_url]: https://github.com/sureshg/jmh-bench-sample/actions/workflows/build.yml
 [gha_img]: https://github.com/sureshg/jmh-bench-sample/actions/workflows/build.yml/badge.svg?branch=main
