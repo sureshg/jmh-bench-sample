@@ -8,8 +8,8 @@ import kotlin.math.*
 
 @BenchmarkMode(Mode.AverageTime)
 @OutputTimeUnit(NANOSECONDS)
-@Warmup(iterations = 3, time = 1, timeUnit = SECONDS)
-@Measurement(iterations = 3, time = 1, timeUnit = SECONDS)
+@Warmup(iterations = 2, time = 1, timeUnit = SECONDS)
+@Measurement(iterations = 2, time = 1, timeUnit = SECONDS)
 @Fork(1)
 @State(Scope.Benchmark)
 open class KotlinBench {
@@ -25,7 +25,7 @@ open class KotlinBench {
      */
     @Benchmark
     fun test(bh: Blackhole) {
-        (1..1_00).forEach {
+        (1..10).forEach {
             bh.consume(it)
         }
     }

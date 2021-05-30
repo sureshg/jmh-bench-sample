@@ -25,7 +25,7 @@ public class BenchMain {
   @Param("2")
   int min;
 
-  @Param("100")
+  @Param("10")
   int max;
 
   @Benchmark
