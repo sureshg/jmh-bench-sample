@@ -193,8 +193,7 @@ jobs:
           body: ${{ steps.github_release.outputs.changelog }}
           prerelease: ${{ contains(github.event.inputs.version, '-rc') || contains(github.event.inputs.version, '-b') || contains(github.event.inputs.version, '-a') }}
           files: |
-            release-artifacts/**/*.json
-            release-artifacts/**/*.jar
+            ${{ github.workspace }}/release-artifacts/**
           fail_on_unmatched_files: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
