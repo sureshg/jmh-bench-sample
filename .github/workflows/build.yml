@@ -67,7 +67,7 @@ jobs:
       - name: Download OpenJDK (fallback)
         if: ${{ false }}
         run: |
-          download_url="https://download.java.net/java/early_access/loom/7/openjdk-17-loom+7-342_macos-x64_bin.tar.gz"
+          download_url="https://download.java.net/java/early_access/loom/7/openjdk-17-loom+7-342_linux-x64_bin.tar.gz"
           wget -O $RUNNER_TEMP/java_package.tar.gz $download_url
 
       - name: Set up OpenJDK ${{ matrix.jdk }}
@@ -185,6 +185,17 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           path: release-artifacts
+
+      - name: Commit and push JMH Results
+        if: success()
+        run: |
+          # git diff
+          cp release-artifacts/*.json docs
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add docs
+          git commit -m "Updated JMH Results" || exit 0
+          git push
 
       - name: Github Release
         uses: softprops/action-gh-release@v1

@@ -6,7 +6,7 @@
 
   <groupId>dev.suresh</groupId>
   <artifactId>jmh-bench-sample</artifactId>
-  <version>1.3.0-SNAPSHOT</version>
+  <version>1.3.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>Sample Bench</name>
@@ -35,6 +35,7 @@
 
     <!-- plugin versions -->
     <compiler.plugin.version>3.8.1</compiler.plugin.version>
+    <maven.toolchains.plugin>3.0.0</maven.toolchains.plugin>
     <shade.plugin.version>3.2.4</shade.plugin.version>
     <enforcer.plugin.version>3.0.0-M3</enforcer.plugin.version>
     <clean.plugin.version>3.1.0</clean.plugin.version>
@@ -322,6 +323,27 @@
           <version>${release.plugin.version}</version>
           <configuration>
             <localCheckout>true</localCheckout> <!-- must be true -->
+          </configuration>
+        </plugin>
+
+        <!-- JDK Toolchains plugin -->
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-toolchains-plugin</artifactId>
+          <version>${maven.toolchains.plugin}</version>
+          <executions>
+            <execution>
+              <goals>
+                <goal>toolchain</goal>
+              </goals>
+            </execution>
+          </executions>
+          <configuration>
+            <toolchains>
+              <jdk>
+                <version>[11,)</version>
+              </jdk>
+            </toolchains>
           </configuration>
         </plugin>
 
