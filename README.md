@@ -32,7 +32,7 @@ $ java -jar target/benchmarks.jar -prof perfasm
 
 ##### :art: JMH Visualization
 
- [JMH Benchmarks Viz](https://suresh.dev/jmh-bench-sample/?source=jmh-result.json)
+ [JMH Benchmarks Viz](https://suresh.dev/jmh-bench-sample/?source=jmh-result-Linux.json)
 
 ##### :bookmark: Resources
 
