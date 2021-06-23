@@ -6,7 +6,7 @@
 
   <groupId>dev.suresh</groupId>
   <artifactId>jmh-bench-sample</artifactId>
-  <version>1.3.2-SNAPSHOT</version>
+  <version>1.3.3-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>Sample Bench</name>
