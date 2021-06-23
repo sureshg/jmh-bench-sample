@@ -190,7 +190,8 @@ jobs:
         if: success()
         run: |
           # git diff
-          cp release-artifacts/*.json docs
+          echo "Copying JMH result JSON files to docs..."
+          find release-artifacts -name "*.json" -type f -exec cp -prv "{}" docs \;
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add docs
