@@ -203,8 +203,10 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           # name: Release ${{ steps.get-version.outputs.tag }}
+          # tag_name: ${{ github.ref }}
+          # release_name: ${{ github.ref }}
           body: ${{ steps.github_release.outputs.changelog }}
-          prerelease: ${{ contains(github.event.inputs.version, '-rc') || contains(github.event.inputs.version, '-b') || contains(github.event.inputs.version, '-a') }}
+          prerelease: ${{ contains(github.ref, '-rc') || contains(github.ref, '-b') || contains(github.ref, '-a') }}
           files: |
             ${{ github.workspace }}/release-artifacts/**
           fail_on_unmatched_files: true
