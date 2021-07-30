@@ -51,7 +51,7 @@
     <exec.plugin.version>3.0.0</exec.plugin.version>
     <release.plugin.version>3.0.0-M4</release.plugin.version>
     <gpg.plugin.version>1.6</gpg.plugin.version>
-    <google-java-format.version>1.10.0</google-java-format.version>
+    <google-java-format.version>1.11.0</google-java-format.version>
     <gitcommit.plugin.version>4.9.9</gitcommit.plugin.version>
     <conveofmt.plugin.version>2.11</conveofmt.plugin.version>
     <versions.plugin.version>2.7</versions.plugin.version>
