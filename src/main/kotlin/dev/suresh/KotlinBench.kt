@@ -8,8 +8,8 @@ import kotlin.math.*
 
 @BenchmarkMode(Mode.AverageTime)
 @OutputTimeUnit(NANOSECONDS)
-@Warmup(iterations = 2, time = 1, timeUnit = SECONDS)
-@Measurement(iterations = 2, time = 1, timeUnit = SECONDS)
+@Warmup(iterations = 1, time = 1, timeUnit = SECONDS)
+@Measurement(iterations = 1, time = 1, timeUnit = SECONDS)
 @Fork(1)
 @State(Scope.Benchmark)
 open class KotlinBench {
@@ -18,6 +18,12 @@ open class KotlinBench {
     var size = 0
 
     private val x = Math.PI
+
+    /**
+     * Baseline measurement: how much single Math.log costs.
+     */
+    @Benchmark
+    fun baseline() = ln(x)
 
     /**
      * Use explicit [Blackhole] objects, and sink the values there.
