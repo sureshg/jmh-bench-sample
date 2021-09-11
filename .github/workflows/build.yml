@@ -70,7 +70,7 @@ jobs:
           download_url="https://download.java.net/java/early_access/loom/7/openjdk-17-loom+7-342_linux-x64_bin.tar.gz"
           wget -O $RUNNER_TEMP/java_package.tar.gz $download_url
 
-      - name: Set up OpenJDK ${{ matrix.jdk }}
+      - name: Set up OpenJDK ${{ matrix.jdk }} with dep cache
         id: setup-java
         uses: actions/setup-java@v2
         if: always() && steps.download-jdk.outcome == 'success'
@@ -78,7 +78,9 @@ jobs:
           distribution: jdkfile
           java-version: ${{ env.JDK_VERSION }}
           jdkFile: ${{ env.JDK_FILE }}
+          cache: 'maven'
         # jdkFile: ${{ runner.temp }}/java_package.tar.gz
+        # architecture: x64
 
       - name: Print Env
         shell: bash
@@ -94,14 +96,6 @@ jobs:
           echo "JAVA_HOME_11                       = $JAVA_HOME_11_X64"
           # echo "JAVA_HOME=$JAVA_HOME_11_X64" >> $GITHUB_ENV
           # echo "$JAVA_HOME_11_X64/bin" >> $GITHUB_PATH
-
-      - name: Cache Maven packages
-        uses: actions/cache@v2
-        with:
-          path: ~/.m2
-          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
-          restore-keys: |
-            ${{ runner.os }}-maven-
 
       - name: Create Version Number
         id: sha-version
