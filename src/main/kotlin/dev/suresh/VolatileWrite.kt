@@ -20,7 +20,6 @@ open class VolatileWrite {
 
     @Benchmark
     fun incrVolatile(): Int {
-        println(">>>>> $tokens")
         Blackhole.consumeCPU(tokens)
         return vv++
     }
