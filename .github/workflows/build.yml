@@ -67,7 +67,7 @@ jobs:
       - name: Download OpenJDK (fallback)
         if: ${{ false }}
         run: |
-          download_url="https://download.java.net/java/early_access/loom/7/openjdk-17-loom+7-342_linux-x64_bin.tar.gz"
+          download_url="https://download.java.net/java/early_access/jdk18/14/GPL/openjdk-18-ea+14_linux-x64_bin.tar.gz"
           wget -O $RUNNER_TEMP/java_package.tar.gz $download_url
 
       - name: Set up OpenJDK ${{ matrix.jdk }} with dep cache
@@ -78,6 +78,7 @@ jobs:
           distribution: jdkfile
           java-version: ${{ env.JDK_VERSION }}
           jdkFile: ${{ env.JDK_FILE }}
+          check-latest: true
           cache: 'maven'
         # jdkFile: ${{ runner.temp }}/java_package.tar.gz
         # architecture: x64
