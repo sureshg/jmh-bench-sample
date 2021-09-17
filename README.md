@@ -1,5 +1,9 @@
 ## :hourglass: [JMH][jmh_url] Benchmark Sample
 
+<a href="https://foojay.io/today/works-with-openjdk">
+ <img align="right" src="https://github.com/foojayio/badges/raw/main/works_with_openjdk/WorksWithOpenJDK.svg" width="7%" alt="WorksWithOpenJDK">
+</a>
+
 [![GitHub Workflow Status][shieldio_img]][gha_url]
 [![JMH][jmh_img]][jmh_url]
 [![Kotlin release][kt_img]][kt_url]
