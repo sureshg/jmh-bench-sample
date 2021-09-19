@@ -110,7 +110,7 @@ jobs:
         run: ./mvnw verify
 
       - name: Deploy to GitHub Packages (Linux)
-        id: maaven-deploy
+        id: maven-deploy
         if: env.GITHUB_DEPLOY == 'true' && runner.os == 'Linux' && github.event_name == 'push'
         run: |
           ./mvnw --settings .mvn/settings.xml clean deploy
