@@ -51,6 +51,10 @@ jobs:
           - os: windows-latest
             cmd: ./mvnw.cmd
 
+    permissions:
+      contents: read
+      packages: write
+
     outputs:
       sha-version: ${{ steps.sha-version.outputs.version }}
 
@@ -84,6 +88,7 @@ jobs:
           cache: 'maven'
         # jdkFile: ${{ runner.temp }}/java_package.tar.gz
         # architecture: x64
+        # settings-path: ${{ github.workspace }} # OR $GITHUB_WORKSPACE
 
       - name: Print Env
         shell: bash
