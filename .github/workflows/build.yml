@@ -42,7 +42,7 @@ jobs:
       fail-fast: true
       matrix:
         os: [ ubuntu-latest, macos-latest, windows-latest ]
-        jdk: [ 18 ]
+        jdk: [ 19 ]
         include:
           - os: ubuntu-latest
             cmd: ./mvnw
@@ -73,7 +73,7 @@ jobs:
       - name: Download OpenJDK (fallback)
         if: ${{ false }}
         run: |
-          download_url="https://download.java.net/java/early_access/jdk18/14/GPL/openjdk-18-ea+14_linux-x64_bin.tar.gz"
+          download_url="https://download.java.net/java/early_access/jdk19/1/GPL/openjdk-19-ea+1_linux-x64_bin.tar.gz"
           wget -O $RUNNER_TEMP/java_package.tar.gz $download_url
 
       - name: Set up OpenJDK ${{ matrix.jdk }} with dep cache
