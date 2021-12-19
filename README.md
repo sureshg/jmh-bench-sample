@@ -53,7 +53,7 @@ $ java -jar target/benchmarks.jar -prof perfasm
 
 ```bash
 # Maven and dependencies updates.
-$ mvn -N io.takari:maven:wrapper -Dmaven=3.8.3
+$ mvn wrapper:wrapper
 $ ./mvnw --version
 $ ./mvnw clean versions:display-dependency-updates versions:display-plugin-updates versions:display-property-updates
 ```
