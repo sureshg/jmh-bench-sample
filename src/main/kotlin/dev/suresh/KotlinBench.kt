@@ -26,8 +26,9 @@ open class KotlinBench {
     fun baseline() = ln(x)
 
     /**
-     * Use explicit [Blackhole] objects, and sink the values there.
-     * (Background: [Blackhole] is just another @State object, bundled with JMH).
+     * Should your benchmark require returning multiple results, use explicit
+     * [Blackhole] objects, and sink the values there. (Background: [Blackhole]
+     * is just another @State object, bundled with JMH).
      */
     @Benchmark
     fun test(bh: Blackhole) {
