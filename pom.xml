@@ -22,7 +22,7 @@
     <!-- Compiler versions -->
     <javac.target>17</javac.target>
     <maven.version>3.6</maven.version>
-    <kotlin.version>1.6.10</kotlin.version>
+    <kotlin.version>1.6.20-M1</kotlin.version>
     <kotlin.use.ir>true</kotlin.use.ir>
     <kotlin.compiler.jvmTarget>${javac.target}</kotlin.compiler.jvmTarget>
 
@@ -51,7 +51,7 @@
     <exec.plugin.version>3.0.0</exec.plugin.version>
     <release.plugin.version>3.0.0-M5</release.plugin.version>
     <gpg.plugin.version>1.6</gpg.plugin.version>
-    <google-java-format.version>1.13.0</google-java-format.version>
+    <google-java-format.version>1.14.0</google-java-format.version>
     <gitcommit.plugin.version>4.9.10</gitcommit.plugin.version>
     <conveofmt.plugin.version>2.13</conveofmt.plugin.version>
     <versions.plugin.version>2.9.0</versions.plugin.version>
