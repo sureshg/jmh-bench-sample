@@ -22,7 +22,7 @@
     <!-- Compiler versions -->
     <javac.target>17</javac.target>
     <maven.version>3.6</maven.version>
-    <kotlin.version>1.6.20-M1</kotlin.version>
+    <kotlin.version>1.6.20-RC</kotlin.version>
     <kotlin.use.ir>true</kotlin.use.ir>
     <kotlin.compiler.jvmTarget>${javac.target}</kotlin.compiler.jvmTarget>
 
