@@ -62,7 +62,9 @@ $ ./mvnw clean versions:display-dependency-updates versions:display-plugin-updat
 
 ---
 
-This is a slightly modified version of [Aleksey Shipilev's](https://github.com/shipilev) sample.
+* [JMH Samples](https://github.com/openjdk/jmh/tree/master/jmh-samples)
+* [JCStress Samples](https://github.com/openjdk/jcstress/tree/master/jcstress-samples)
+
 
 
 [github-packages]: https://github.com/sureshg/jmh-bench-sample/packages
