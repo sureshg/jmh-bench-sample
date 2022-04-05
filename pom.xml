@@ -229,6 +229,7 @@
           <version>${surefire.plugin.version}</version>
           <configuration>
             <redirectTestOutputToFile>false</redirectTestOutputToFile>
+            <!--<argLine>&#45;&#45;enable-preview &#45;&#45;add-modules jdk.incubator.concurrent</argLine>-->
           </configuration>
         </plugin>
 
@@ -495,6 +496,11 @@
           <release>${release.version}</release>
           <!--<source>${release.version}</source>-->
           <!--<target>${release.version}</target>-->
+          <!--<compilerArgs>-->
+          <!--  <arg>&#45;&#45;add-modules=jdk.incubator.concurrent</arg>-->
+          <!--  <arg>&#45;&#45;add-exports</arg>-->
+          <!--  <arg>java.base/jdk.internal.vm=ALL-UNNAMED</arg>-->
+          <!--</compilerArgs>-->
         </configuration>
       </plugin>
 
