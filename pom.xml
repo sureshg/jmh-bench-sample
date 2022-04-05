@@ -25,9 +25,8 @@
     <release.version>19</release.version>
     <maven.version>3.8</maven.version>
     <maven.compiler.release>${release.version}</maven.compiler.release>
-    <!-- For older java versions -->
-    <!-- <maven.compiler.source>${release.version}</maven.compiler.source>-->
-    <!-- <maven.compiler.target>${release.version}</maven.compiler.target>-->
+    <!--<maven.compiler.source>${release.version}</maven.compiler.source>-->
+    <!--<maven.compiler.target>${release.version}</maven.compiler.target>-->
 
     <!-- Kotlin Compiler versions -->
     <kotlin.version>1.6.20</kotlin.version>
@@ -147,11 +146,6 @@
         <version>${kotlin.version}</version>
         <type>pom</type>
         <scope>import</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.jetbrains.kotlin</groupId>
-        <artifactId>kotlin-maven-allopen</artifactId>
-        <version>${kotlin.version}</version>
       </dependency>
       <dependency>
         <groupId>org.openjdk.jmh</groupId>
@@ -496,11 +490,9 @@
         <!-- https://maven.apache.org/plugins/maven-compiler-plugin/compile-mojo.html -->
         <configuration>
           <enablePreview>true</enablePreview>
-          <!-- The compilerVersion parameter can be used to specify the version of the compiler that the plugin will use -->
           <compilerVersion>${jdk.version}</compilerVersion>
           <!-- https://maven.apache.org/plugins/maven-compiler-plugin/examples/set-compiler-release.html -->
           <release>${release.version}</release>
-          <!-- For older java versions, https://maven.apache.org/plugins/maven-compiler-plugin/examples/set-compiler-source-and-target.html -->
           <!--<source>${release.version}</source>-->
           <!--<target>${release.version}</target>-->
         </configuration>
