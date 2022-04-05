@@ -38,7 +38,7 @@
     <maven.toolchains.plugin>3.0.0</maven.toolchains.plugin>
     <shade.plugin.version>3.3.0</shade.plugin.version>
     <enforcer.plugin.version>3.0.0</enforcer.plugin.version>
-    <clean.plugin.version>3.1.0</clean.plugin.version>
+    <clean.plugin.version>3.2.0</clean.plugin.version>
     <deploy.plugin.version>3.0.0-M2</deploy.plugin.version>
     <install.plugin.version>3.0.0-M1</install.plugin.version>
     <jar.plugin.version>3.2.2</jar.plugin.version>
