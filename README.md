@@ -18,20 +18,20 @@ to [Github Package Registry][github-packages].
 
 ```bash
 $ ./mvnw clean verify 
-$ java -jar target/benchmarks.jar
+$ java --enable-preview -jar target/benchmarks.jar
 
 # Get a list of supported formats
-$ java -jar target/benchmarks.jar -lrf
+$ java --enable-preview -jar target/benchmarks.jar -lrf
 
 # For JSON output
-$ java -jar target/benchmarks.jar -rf json
+$ java --enable-preview -jar target/benchmarks.jar -rf json
 ```
 
 
 - #### :running: Run with profiling (requires [hsdis][hsdis])
 
 ```bash
-$ java -jar target/benchmarks.jar -prof perfasm
+$ java --enable-preview -jar target/benchmarks.jar -prof perfasm
 ```
 
 ##### :art: JMH Visualization

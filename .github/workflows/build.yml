@@ -75,7 +75,7 @@ jobs:
       - name: Download OpenJDK (fallback)
         if: ${{ false }}
         run: |
-          download_url="https://download.java.net/java/early_access/jdk19/1/GPL/openjdk-19-ea+1_linux-x64_bin.tar.gz"
+          download_url="https://download.java.net/java/early_access/jdk19/15/GPL/openjdk-19-ea+15_linux-x64_bin.tar.gz"
           wget -O $RUNNER_TEMP/java_package.tar.gz $download_url
 
       - name: Set up OpenJDK ${{ matrix.jdk }} with dep cache
@@ -128,7 +128,7 @@ jobs:
       - name: Run JMH Benchmark
         if: success()
         run: |
-          java -jar target/benchmarks.jar -rf json -rff jmh-result-${{ runner.os }}.json
+          java --enable-preview -jar target/benchmarks.jar -rf json -rff jmh-result-${{ runner.os }}.json
           # mkdir staging && cp {$result_file,target/benchmarks.jar} staging
 
       - name: Uploading JMH ${{ matrix.os }} benchmark results
@@ -203,6 +203,7 @@ jobs:
           # You are not currently on a branch (detached HEAD)
           git push origin HEAD:${{ github.event.repository.default_branch }}
 
+      # Alternatives are listed here - https://github.com/actions/create-release
       - name: Github Release
         uses: softprops/action-gh-release@v1
         with:

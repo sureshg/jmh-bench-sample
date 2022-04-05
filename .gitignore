@@ -15,6 +15,7 @@ out/
 target/
 !.mvn/wrapper/maven-wrapper.jar
 /javadocs
+dependency-reduced-pom.xml
 
 # Java
 hs_err_pid*

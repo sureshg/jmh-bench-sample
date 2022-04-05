@@ -14,17 +14,26 @@
   <url>${github.url}</url>
 
   <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.build.outputTimestamp>2020-04-19T01:51:00Z</project.build.outputTimestamp>
     <github.url>https://github.com/sureshg/jmh-bench-sample</github.url>
     <github.pkg.url>https://maven.pkg.github.com/sureshg/jmh-bench-sample</github.pkg.url>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <project.build.outputTimestamp>2020-04-19T01:51:00Z</project.build.outputTimestamp>
 
     <!-- Compiler versions -->
-    <javac.target>17</javac.target>
-    <maven.version>3.6</maven.version>
+    <jdk.version>19</jdk.version>
+    <release.version>19</release.version>
+    <maven.version>3.8</maven.version>
+    <maven.compiler.release>${release.version}</maven.compiler.release>
+    <!-- For older java versions -->
+    <!-- <maven.compiler.source>${release.version}</maven.compiler.source>-->
+    <!-- <maven.compiler.target>${release.version}</maven.compiler.target>-->
+
+    <!-- Kotlin Compiler versions -->
     <kotlin.version>1.6.20</kotlin.version>
-    <kotlin.use.ir>true</kotlin.use.ir>
-    <kotlin.compiler.jvmTarget>${javac.target}</kotlin.compiler.jvmTarget>
+    <kotlin.compiler.jvmTarget>18</kotlin.compiler.jvmTarget>
+    <kotlin.compiler.apiVersion>1.7</kotlin.compiler.apiVersion>
+    <kotlin.compiler.languageVersion>1.7</kotlin.compiler.languageVersion>
 
     <!-- Dependency versions -->
     <jmh.version>1.35</jmh.version>
@@ -46,7 +55,7 @@
     <resources.plugin.version>3.2.0</resources.plugin.version>
     <site.plugin.version>3.11.0</site.plugin.version>
     <source.plugin.version>3.2.1</source.plugin.version>
-    <surefire.plugin.version>3.0.0-M5</surefire.plugin.version>
+    <surefire.plugin.version>3.0.0-M6</surefire.plugin.version>
     <execjar.plugin.version>1.5.0</execjar.plugin.version>
     <exec.plugin.version>3.0.0</exec.plugin.version>
     <release.plugin.version>3.0.0-M5</release.plugin.version>
@@ -138,6 +147,11 @@
         <version>${kotlin.version}</version>
         <type>pom</type>
         <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlin</groupId>
+        <artifactId>kotlin-maven-allopen</artifactId>
+        <version>${kotlin.version}</version>
       </dependency>
       <dependency>
         <groupId>org.openjdk.jmh</groupId>
@@ -377,8 +391,29 @@
       <plugin>
         <groupId>org.jetbrains.kotlin</groupId>
         <artifactId>kotlin-maven-plugin</artifactId>
-        <executions>
+        <!-- https://kotlinlang.org/docs/maven.html#specifying-compiler-options -->
+        <configuration>
+          <args>
+            <arg>-progressive</arg>
+            <arg>-java-parameters</arg>
+            <arg>-Xjsr305=strict</arg>
+            <arg>-Xjvm-default=all</arg>
+            <arg>-Xcontext-receivers</arg>
+          </args>
+          <compilerPlugins>
+            <plugin>all-open</plugin>
+          </compilerPlugins>
+          <pluginOptions/>
+        </configuration>
+        <dependencies>
+          <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-maven-allopen</artifactId>
+            <version>${kotlin.version}</version>
+          </dependency>
+        </dependencies>
 
+        <executions>
           <execution>
             <id>process-sources</id>
             <phase>generate-sources</phase>
@@ -400,14 +435,6 @@
             </goals>
           </execution>
         </executions>
-
-        <configuration>
-          <args>
-            <arg>-Xuse-ir=${kotlin.use.ir}</arg>
-            <!-- Enable strict mode for JSR-305 annotations -->
-            <arg>-Xjsr305=strict</arg>
-          </args>
-        </configuration>
       </plugin>
 
       <!-- 2. Invoke JMH generators to produce benchmark code -->
@@ -466,10 +493,16 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
+        <!-- https://maven.apache.org/plugins/maven-compiler-plugin/compile-mojo.html -->
         <configuration>
-          <compilerVersion>${javac.target}</compilerVersion>
-          <source>${javac.target}</source>
-          <release>${javac.target}</release>
+          <enablePreview>true</enablePreview>
+          <!-- The compilerVersion parameter can be used to specify the version of the compiler that the plugin will use -->
+          <compilerVersion>${jdk.version}</compilerVersion>
+          <!-- https://maven.apache.org/plugins/maven-compiler-plugin/examples/set-compiler-release.html -->
+          <release>${release.version}</release>
+          <!-- For older java versions, https://maven.apache.org/plugins/maven-compiler-plugin/examples/set-compiler-source-and-target.html -->
+          <!--<source>${release.version}</source>-->
+          <!--<target>${release.version}</target>-->
         </configuration>
       </plugin>
 
@@ -530,7 +563,7 @@
                   <version>[${maven.version},)</version>
                 </requireMavenVersion>
                 <requireJavaVersion>
-                  <version>${javac.target}</version>
+                  <version>${jdk.version}</version>
                 </requireJavaVersion>
               </rules>
             </configuration>
