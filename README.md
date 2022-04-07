@@ -53,7 +53,7 @@ $ java --enable-preview -jar target/benchmarks.jar -prof perfasm
 
 ```bash
 # Maven and dependencies updates.
-$ mvn wrapper:wrapper
+$ mvn wrapper:wrapper -Dmaven=3.8.5
 $ ./mvnw --version
 $ ./mvnw clean versions:display-dependency-updates versions:display-plugin-updates versions:display-property-updates
 ```
@@ -89,4 +89,5 @@ $ ./mvnw clean versions:display-dependency-updates versions:display-plugin-updat
 [lgtm_url]: https://lgtm.com/projects/g/sureshg/jmh-bench-sample/context:java
 [lgtm_img]: https://img.shields.io/lgtm/grade/java/github/sureshg/jmh-bench-sample.svg?logo=lgtm&style=for-the-badge
 
-[hsdis]: https://github.com/AdoptOpenJDK/jitwatch/wiki/Building-hsdis
+[hsdis]: https://chriswhocodes.com/hsdis/
+[hsdis-building]: https://github.com/AdoptOpenJDK/jitwatch/wiki/Building-hsdis
