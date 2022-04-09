@@ -488,14 +488,18 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <!-- https://maven.apache.org/plugins/maven-compiler-plugin/compile-mojo.html -->
+        <!-- https://maven.apache.org/plugins/maven-compiler-plugin/examples/set-compiler-release.html -->
         <configuration>
           <enablePreview>true</enablePreview>
+          <parameters>true</parameters>
           <compilerVersion>${jdk.version}</compilerVersion>
-          <!-- https://maven.apache.org/plugins/maven-compiler-plugin/examples/set-compiler-release.html -->
+          <source>${release.version}</source>
+          <target>${release.version}</target>
           <release>${release.version}</release>
-          <!--<source>${release.version}</source>-->
-          <!--<target>${release.version}</target>-->
+          <testSource>${release.version}</testSource>
+          <testTarget>${release.version}</testTarget>
+          <testRelease>${release.version}</testRelease>
+          <!--<testCompilerArgument>&#45;&#45;enable-preview</testCompilerArgument>-->
           <!--<compilerArgs>-->
           <!--  <arg>&#45;&#45;add-modules=jdk.incubator.concurrent</arg>-->
           <!--  <arg>&#45;&#45;add-exports</arg>-->
