@@ -57,7 +57,7 @@
     <surefire.plugin.version>3.0.0-M7</surefire.plugin.version>
     <execjar.plugin.version>1.5.0</execjar.plugin.version>
     <exec.plugin.version>3.0.0</exec.plugin.version>
-    <release.plugin.version>3.0.0-M5</release.plugin.version>
+    <release.plugin.version>3.0.0-M6</release.plugin.version>
     <gpg.plugin.version>1.6</gpg.plugin.version>
     <google-java-format.version>1.15.0</google-java-format.version>
     <gitcommit.plugin.version>4.9.10</gitcommit.plugin.version>
