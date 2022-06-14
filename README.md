@@ -77,7 +77,7 @@ $ ./mvnw clean versions:display-dependency-updates versions:display-plugin-updat
 [jmh_img]: https://img.shields.io/maven-central/v/org.openjdk.jmh/jmh-core?color=cd2237&label=Jmh-Core&logo=apache%20maven&logoColor=cd2237&style=for-the-badge
 
 [java_url]: https://jdk.java.net/
-[java_img]: https://img.shields.io/badge/OpenJDK-jdk--19-ea791d?logo=java&style=for-the-badge&logoColor=ea791d
+[java_img]: https://img.shields.io/badge/OpenJDK-jdk--20-ea791d?logo=java&style=for-the-badge&logoColor=ea791d
 
 [gha_url]: https://github.com/sureshg/jmh-bench-sample/actions/workflows/build.yml
 [gha_img]: https://github.com/sureshg/jmh-bench-sample/actions/workflows/build.yml/badge.svg?branch=main

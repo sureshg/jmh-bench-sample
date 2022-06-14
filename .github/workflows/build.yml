@@ -42,7 +42,7 @@ jobs:
       fail-fast: true
       matrix:
         os: [ ubuntu-latest, macos-latest, windows-latest ]
-        jdk: [ 19 ]
+        jdk: [ 20 ]
         include:
           - os: ubuntu-latest
             cmd: ./mvnw
@@ -64,7 +64,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Download EA build of ${{ matrix.jdk }} from jdk.java.net
+      - name: Download OpenJDK ${{ matrix.jdk }} build from jdk.java.net
         id: download-jdk
         uses: oracle-actions/setup-java@v1
         with:
@@ -75,7 +75,7 @@ jobs:
       - name: Download OpenJDK (fallback)
         if: ${{ false }}
         run: |
-          download_url="https://download.java.net/java/early_access/jdk19/15/GPL/openjdk-19-ea+15_linux-x64_bin.tar.gz"
+          download_url="https://download.java.net/java/early_access/jdk20/1/GPL/openjdk-20-ea+1_linux-x64_bin.tar.gz"
           wget -O $RUNNER_TEMP/java_package.tar.gz $download_url
 
       - name: Set up OpenJDK ${{ matrix.jdk }} with dep cache
