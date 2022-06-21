@@ -53,7 +53,7 @@ $ java --enable-preview -jar target/benchmarks.jar -prof perfasm
 
 ```bash
 # Maven and dependencies updates.
-$ mvn wrapper:wrapper -Dmaven=3.8.5
+$ mvn wrapper:wrapper -Dmaven=3.8.6
 $ ./mvnw --version
 $ ./mvnw clean versions:display-dependency-updates versions:display-plugin-updates versions:display-property-updates
 ```
