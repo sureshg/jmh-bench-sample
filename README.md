@@ -12,7 +12,7 @@
 [![Style guide][sty_img]][sty_url]
 
 A sample repo for building **Java** and **Kotlin** benchmarks with JMH and publish the artifacts
-to [Github Package Registry][github-packages].
+to [GitHub Package Registry][github-packages].
 
 - #### :building_construction: Build & Run
 
@@ -47,7 +47,7 @@ $ java --enable-preview -jar target/benchmarks.jar -prof perfasm
 - [JMH Visualizer](https://github.com/jzillmann/jmh-visualizer)
 - [JMH Gradle Plugin](https://github.com/melix/jmh-gradle-plugin)
 - [JMH Gradle Report](https://github.com/jzillmann/gradle-jmh-report)
-- [Github Action - Java with Maven](https://docs.github.com/en/actions/guides/building-and-testing-java-with-maven)
+- [GitHub Action—Java with Maven](https://docs.github.com/en/actions/guides/building-and-testing-java-with-maven)
 
 ##### :hammer_and_wrench: Misc
 
