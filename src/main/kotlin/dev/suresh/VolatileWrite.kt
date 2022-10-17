@@ -1,8 +1,8 @@
 package dev.suresh
 
+import java.util.concurrent.*
 import org.openjdk.jmh.annotations.*
 import org.openjdk.jmh.infra.*
-import java.util.concurrent.*
 
 @BenchmarkMode(Mode.AverageTime)
 @OutputTimeUnit(TimeUnit.NANOSECONDS)
@@ -12,15 +12,13 @@ import java.util.concurrent.*
 @State(Scope.Benchmark)
 open class VolatileWrite {
 
-    @Param("10")
-    var tokens = 0L
+  @Param("10") var tokens = 0L
 
-    @Volatile
-    var vv = 0
+  @Volatile var vv = 0
 
-    @Benchmark
-    fun incrVolatile(): Int {
-        Blackhole.consumeCPU(tokens)
-        return vv++
-    }
+  @Benchmark
+  fun incrVolatile(): Int {
+    Blackhole.consumeCPU(tokens)
+    return vv++
+  }
 }

@@ -17,7 +17,7 @@ to [GitHub Package Registry][github-packages].
 - #### :building_construction: Build & Run
 
 ```bash
-$ ./mvnw clean verify 
+$ ./mvnw clean verify
 $ java --enable-preview -jar target/benchmarks.jar
 
 # Get a list of supported formats

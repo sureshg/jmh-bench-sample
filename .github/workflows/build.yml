@@ -111,7 +111,7 @@ jobs:
         id: sha-version
         run: |
           SHA_VERSION=$(echo $GITHUB_SHA | cut -c1-7)
-          echo "::set-output name=version::$SHA_VERSION"
+          echo "version=$SHA_VERSION" >>"$GITHUB_OUTPUT"
 
       - name: Maven Build
         run: ./mvnw verify
@@ -164,11 +164,10 @@ jobs:
         id: get-version
         run: |
           echo "GITHUB_REF = $GITHUB_REF"
-          echo ::set-output name=version::${GITHUB_REF#refs/*/}
-          echo ::set-output name=branch::${GITHUB_REF#refs/heads/}
-          echo ::set-output name=tag::${GITHUB_REF#refs/tags/}
+          echo "version=${GITHUB_REF#refs/*/}" >>"$GITHUB_OUTPUT"
+          echo "branch=${GITHUB_REF#refs/heads/}" >>"$GITHUB_OUTPUT"
+          echo "tag=${GITHUB_REF#refs/tags/}" >>"$GITHUB_OUTPUT"
           # echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
-          # echo $RELEASE_VERSION
 
       - name: Check out the source code
         uses: actions/checkout@v3
