@@ -16,11 +16,11 @@
   <toolchain>
     <type>jdk</type>
     <provides>
-      <version>20</version>
+      <version>21</version>
       <vendor>openjdk</vendor>
     </provides>
     <configuration>
-      <jdkHome>/path/to/jdk/20</jdkHome>
+      <jdkHome>/path/to/jdk/21</jdkHome>
     </configuration>
   </toolchain>
 </toolchains>

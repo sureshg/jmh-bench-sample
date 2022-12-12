@@ -21,8 +21,8 @@
         <project.build.outputTimestamp>2020-04-19T01:51:00Z</project.build.outputTimestamp>
 
         <!-- Compiler versions -->
-        <jdk.version>20</jdk.version>
-        <release.version>20</release.version>
+        <jdk.version>21</jdk.version>
+        <release.version>21</release.version>
         <maven.version>3.8</maven.version>
         <maven.compiler.release>${release.version}</maven.compiler.release>
         <!--<maven.compiler.source>${release.version}</maven.compiler.source>-->
@@ -30,7 +30,7 @@
 
         <!-- Kotlin Compiler versions -->
         <kotlin.version>1.8.0-RC</kotlin.version>
-        <kotlin.compiler.jvmTarget>18</kotlin.compiler.jvmTarget>
+        <kotlin.compiler.jvmTarget>19</kotlin.compiler.jvmTarget>
         <kotlin.compiler.apiVersion>1.8</kotlin.compiler.apiVersion>
         <kotlin.compiler.languageVersion>1.8</kotlin.compiler.languageVersion>
 
