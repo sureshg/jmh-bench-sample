@@ -8,7 +8,6 @@
 [![JMH][jmh_img]][jmh_url]
 [![Kotlin release][kt_img]][kt_url]
 [![OpenJDK Version][java_img]][java_url]
-[![Language grade: Java][lgtm_img]][lgtm_url]
 [![Style guide][sty_img]][sty_url]
 
 A sample repo for building **Java** and **Kotlin** benchmarks with JMH and publish the artifacts
@@ -81,13 +80,10 @@ $ ./mvnw clean versions:display-dependency-updates versions:display-plugin-updat
 
 [gha_url]: https://github.com/sureshg/jmh-bench-sample/actions/workflows/build.yml
 [gha_img]: https://github.com/sureshg/jmh-bench-sample/actions/workflows/build.yml/badge.svg?branch=main
-[shieldio_img]: https://img.shields.io/github/workflow/status/sureshg/jmh-bench-sample/JMH%20CI/main?color=green&label=JMH%20CI%20Build&logo=Github-Actions&logoColor=green&style=for-the-badge
+[shieldio_img]: https://img.shields.io/github/actions/workflow/status/sureshg/jmh-bench-sample/build.yml?branch=main&color=green&label=JMH%20CI%20Build&logo=Github-Actions&logoColor=green&style=for-the-badge
 
 [sty_url]: https://kotlinlang.org/docs/coding-conventions.html
 [sty_img]: https://img.shields.io/badge/style-Kotlin--Official-40c4ff.svg?style=for-the-badge&logo=kotlin&logoColor=40c4ff
-
-[lgtm_url]: https://lgtm.com/projects/g/sureshg/jmh-bench-sample/context:java
-[lgtm_img]: https://img.shields.io/lgtm/grade/java/github/sureshg/jmh-bench-sample.svg?logo=lgtm&style=for-the-badge
 
 [hsdis]: https://chriswhocodes.com/hsdis/
 [hsdis-building]: https://github.com/AdoptOpenJDK/jitwatch/wiki/Building-hsdis
