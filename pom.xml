@@ -29,10 +29,10 @@
         <!--<maven.compiler.target>${release.version}</maven.compiler.target>-->
 
         <!-- Kotlin Compiler versions -->
-        <kotlin.version>1.8.10</kotlin.version>
+        <kotlin.version>1.8.20-Beta</kotlin.version>
         <kotlin.compiler.jvmTarget>19</kotlin.compiler.jvmTarget>
-        <kotlin.compiler.apiVersion>1.8</kotlin.compiler.apiVersion>
-        <kotlin.compiler.languageVersion>1.8</kotlin.compiler.languageVersion>
+        <kotlin.compiler.apiVersion>1.9</kotlin.compiler.apiVersion>
+        <kotlin.compiler.languageVersion>1.9</kotlin.compiler.languageVersion>
 
         <!-- Dependency versions -->
         <jmh.version>1.36</jmh.version>
