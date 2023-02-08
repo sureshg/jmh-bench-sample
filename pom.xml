@@ -32,7 +32,8 @@
         <kotlin.version>1.8.20-Beta</kotlin.version>
         <kotlin.compiler.jvmTarget>19</kotlin.compiler.jvmTarget>
         <kotlin.compiler.apiVersion>1.9</kotlin.compiler.apiVersion>
-        <kotlin.compiler.languageVersion>1.9</kotlin.compiler.languageVersion>
+        <kotlin.compiler.languageVersion>2.0</kotlin.compiler.languageVersion>
+        <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
 
         <!-- Dependency versions -->
         <jmh.version>1.36</jmh.version>
