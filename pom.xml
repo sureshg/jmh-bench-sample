@@ -48,7 +48,7 @@
         <shade.plugin.version>3.4.1</shade.plugin.version>
         <enforcer.plugin.version>3.2.1</enforcer.plugin.version>
         <clean.plugin.version>3.2.0</clean.plugin.version>
-        <deploy.plugin.version>3.0.0</deploy.plugin.version>
+        <deploy.plugin.version>3.1.0</deploy.plugin.version>
         <install.plugin.version>3.1.0</install.plugin.version>
         <jar.plugin.version>3.3.0</jar.plugin.version>
         <javadoc.plugin.version>3.4.1</javadoc.plugin.version>
