@@ -55,7 +55,7 @@
         <resources.plugin.version>3.3.0</resources.plugin.version>
         <site.plugin.version>3.12.1</site.plugin.version>
         <source.plugin.version>3.2.1</source.plugin.version>
-        <surefire.plugin.version>3.0.0-M9</surefire.plugin.version>
+        <surefire.plugin.version>3.0.0</surefire.plugin.version>
         <execjar.plugin.version>1.5.0</execjar.plugin.version>
         <exec.plugin.version>3.1.0</exec.plugin.version>
         <release.plugin.version>3.0.0-M7</release.plugin.version>
