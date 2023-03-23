@@ -54,7 +54,6 @@ var providedBenchmarkStore = { // eslint-disable-line no-unused-vars
                     ]
                 ]
             },
-            "secondaryMetrics": {
-            }
+            "secondaryMetrics": {}
         }]
 };
