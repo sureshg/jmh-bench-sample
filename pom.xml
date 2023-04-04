@@ -359,6 +359,25 @@
                         </toolchains>
                     </configuration>
                 </plugin>
+                <plugin>
+                    <groupId>org.mvnsearch</groupId>
+                    <artifactId>toolchains-maven-plugin</artifactId>
+                    <version>4.4.0</version>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>toolchain</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                    <configuration>
+                        <toolchains>
+                            <jdk>
+                                <version>${jdk.version}</version>
+                            </jdk>
+                        </toolchains>
+                    </configuration>
+                </plugin>
 
                 <!-- Versions plugin -->
                 <plugin>
