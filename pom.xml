@@ -55,7 +55,7 @@
         <resources.plugin.version>3.3.1</resources.plugin.version>
         <site.plugin.version>3.12.1</site.plugin.version>
         <source.plugin.version>3.2.1</source.plugin.version>
-        <surefire.plugin.version>3.0.0</surefire.plugin.version>
+        <surefire.plugin.version>3.1.0</surefire.plugin.version>
         <execjar.plugin.version>1.5.0</execjar.plugin.version>
         <exec.plugin.version>3.1.0</exec.plugin.version>
         <release.plugin.version>3.0.0</release.plugin.version>
@@ -68,7 +68,7 @@
         <build-helper.plugin.version>3.3.0</build-helper.plugin.version>
         <spotless.version>2.36.0</spotless.version>
         <extra-enforcer-rules.plugin.version>1.6.2</extra-enforcer-rules.plugin.version>
-        <kt-fmt.version>0.41</kt-fmt.version>
+        <kt-fmt.version>0.44</kt-fmt.version>
     </properties>
 
     <licenses>
