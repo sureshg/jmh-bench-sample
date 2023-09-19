@@ -1,10 +1,10 @@
 package dev.suresh
 
-import org.openjdk.jmh.annotations.*
-import org.openjdk.jmh.infra.*
 import java.util.concurrent.TimeUnit.NANOSECONDS
 import java.util.concurrent.TimeUnit.SECONDS
 import kotlin.math.*
+import org.openjdk.jmh.annotations.*
+import org.openjdk.jmh.infra.*
 
 @BenchmarkMode(Mode.AverageTime)
 @OutputTimeUnit(NANOSECONDS)

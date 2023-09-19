@@ -1,8 +1,8 @@
 package dev.suresh
 
+import java.util.concurrent.*
 import org.openjdk.jmh.annotations.*
 import org.openjdk.jmh.infra.*
-import java.util.concurrent.*
 
 @BenchmarkMode(Mode.AverageTime)
 @OutputTimeUnit(TimeUnit.NANOSECONDS)
