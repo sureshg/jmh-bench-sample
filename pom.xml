@@ -29,8 +29,8 @@
         <!--<maven.compiler.target>${release.version}</maven.compiler.target>-->
 
         <!-- Kotlin Compiler versions -->
-        <kotlin.version>1.9.20-Beta</kotlin.version>
-        <kotlin.compiler.jvmTarget>20</kotlin.compiler.jvmTarget>
+        <kotlin.version>1.9.20-Beta2</kotlin.version>
+        <kotlin.compiler.jvmTarget>21</kotlin.compiler.jvmTarget>
         <kotlin.compiler.apiVersion>1.9</kotlin.compiler.apiVersion>
         <kotlin.compiler.languageVersion>2.0</kotlin.compiler.languageVersion>
         <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
