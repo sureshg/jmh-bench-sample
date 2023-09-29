@@ -66,7 +66,7 @@
         <conveofmt.plugin.version>2.13</conveofmt.plugin.version>
         <versions.plugin.version>2.16.1</versions.plugin.version>
         <build-helper.plugin.version>3.4.0</build-helper.plugin.version>
-        <spotless.version>2.39.0</spotless.version>
+        <spotless.version>2.40.0</spotless.version>
         <extra-enforcer-rules.plugin.version>1.7.0</extra-enforcer-rules.plugin.version>
         <kt-fmt.version>0.46</kt-fmt.version>
     </properties>
