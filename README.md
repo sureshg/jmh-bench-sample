@@ -77,7 +77,7 @@ $ ./mvnw clean versions:display-dependency-updates versions:display-plugin-updat
 
 [java_url]: https://jdk.java.net/
 
-[java_img]: https://img.shields.io/badge/OpenJDK-jdk--22-ea791d?logo=java&logoColor=ea791d
+[java_img]: https://img.shields.io/badge/OpenJDK-23--EA-ea791d?logo=java&logoColor=ea791d
 
 [gha_url]: https://github.com/sureshg/jmh-bench-sample/actions/workflows/build.yml
 
