@@ -5,13 +5,13 @@
         "mode" : "avgt",
         "threads" : 1,
         "forks" : 1,
-        "jvm" : "C:\\hostedtoolcache\\windows\\Java_jdkfile_jdk\\716163044\\x64\\bin\\java.exe",
+        "jvm" : "C:\\hostedtoolcache\\windows\\Java_jdkfile_jdk\\1587705024\\x64\\bin\\java.exe",
         "jvmArgs" : [
             "--enable-preview"
         ],
-        "jdkVersion" : "22-ea",
+        "jdkVersion" : "23-ea",
         "vmName" : "OpenJDK 64-Bit Server VM",
-        "vmVersion" : "22-ea+22-1754",
+        "vmVersion" : "23-ea+1-1",
         "warmupIterations" : 1,
         "warmupTime" : "1 s",
         "warmupBatchSize" : 1,
@@ -22,28 +22,28 @@
             "size" : "100"
         },
         "primaryMetric" : {
-            "score" : 7.219561194841653,
+            "score" : 7.038097864746178,
             "scoreError" : "NaN",
             "scoreConfidence" : [
                 "NaN",
                 "NaN"
             ],
             "scorePercentiles" : {
-                "0.0" : 7.219561194841653,
-                "50.0" : 7.219561194841653,
-                "90.0" : 7.219561194841653,
-                "95.0" : 7.219561194841653,
-                "99.0" : 7.219561194841653,
-                "99.9" : 7.219561194841653,
-                "99.99" : 7.219561194841653,
-                "99.999" : 7.219561194841653,
-                "99.9999" : 7.219561194841653,
-                "100.0" : 7.219561194841653
+                "0.0" : 7.038097864746178,
+                "50.0" : 7.038097864746178,
+                "90.0" : 7.038097864746178,
+                "95.0" : 7.038097864746178,
+                "99.0" : 7.038097864746178,
+                "99.9" : 7.038097864746178,
+                "99.99" : 7.038097864746178,
+                "99.999" : 7.038097864746178,
+                "99.9999" : 7.038097864746178,
+                "100.0" : 7.038097864746178
             },
             "scoreUnit" : "ns/op",
             "rawData" : [
                 [
-                    7.219561194841653
+                    7.038097864746178
                 ]
             ]
         },
@@ -56,13 +56,13 @@
         "mode" : "avgt",
         "threads" : 1,
         "forks" : 1,
-        "jvm" : "C:\\hostedtoolcache\\windows\\Java_jdkfile_jdk\\716163044\\x64\\bin\\java.exe",
+        "jvm" : "C:\\hostedtoolcache\\windows\\Java_jdkfile_jdk\\1587705024\\x64\\bin\\java.exe",
         "jvmArgs" : [
             "--enable-preview"
         ],
-        "jdkVersion" : "22-ea",
+        "jdkVersion" : "23-ea",
         "vmName" : "OpenJDK 64-Bit Server VM",
-        "vmVersion" : "22-ea+22-1754",
+        "vmVersion" : "23-ea+1-1",
         "warmupIterations" : 1,
         "warmupTime" : "1 s",
         "warmupBatchSize" : 1,
@@ -73,28 +73,28 @@
             "size" : "1000"
         },
         "primaryMetric" : {
-            "score" : 7.201983662597662,
+            "score" : 6.993971497269088,
             "scoreError" : "NaN",
             "scoreConfidence" : [
                 "NaN",
                 "NaN"
             ],
             "scorePercentiles" : {
-                "0.0" : 7.201983662597662,
-                "50.0" : 7.201983662597662,
-                "90.0" : 7.201983662597662,
-                "95.0" : 7.201983662597662,
-                "99.0" : 7.201983662597662,
-                "99.9" : 7.201983662597662,
-                "99.99" : 7.201983662597662,
-                "99.999" : 7.201983662597662,
-                "99.9999" : 7.201983662597662,
-                "100.0" : 7.201983662597662
+                "0.0" : 6.993971497269088,
+                "50.0" : 6.993971497269088,
+                "90.0" : 6.993971497269088,
+                "95.0" : 6.993971497269088,
+                "99.0" : 6.993971497269088,
+                "99.9" : 6.993971497269088,
+                "99.99" : 6.993971497269088,
+                "99.999" : 6.993971497269088,
+                "99.9999" : 6.993971497269088,
+                "100.0" : 6.993971497269088
             },
             "scoreUnit" : "ns/op",
             "rawData" : [
                 [
-                    7.201983662597662
+                    6.993971497269088
                 ]
             ]
         },
@@ -107,13 +107,13 @@
         "mode" : "avgt",
         "threads" : 1,
         "forks" : 1,
-        "jvm" : "C:\\hostedtoolcache\\windows\\Java_jdkfile_jdk\\716163044\\x64\\bin\\java.exe",
+        "jvm" : "C:\\hostedtoolcache\\windows\\Java_jdkfile_jdk\\1587705024\\x64\\bin\\java.exe",
         "jvmArgs" : [
             "--enable-preview"
         ],
-        "jdkVersion" : "22-ea",
+        "jdkVersion" : "23-ea",
         "vmName" : "OpenJDK 64-Bit Server VM",
-        "vmVersion" : "22-ea+22-1754",
+        "vmVersion" : "23-ea+1-1",
         "warmupIterations" : 1,
         "warmupTime" : "1 s",
         "warmupBatchSize" : 1,
@@ -124,28 +124,28 @@
             "size" : "10000"
         },
         "primaryMetric" : {
-            "score" : 7.173890907093206,
+            "score" : 7.002144783143064,
             "scoreError" : "NaN",
             "scoreConfidence" : [
                 "NaN",
                 "NaN"
             ],
             "scorePercentiles" : {
-                "0.0" : 7.173890907093206,
-                "50.0" : 7.173890907093206,
-                "90.0" : 7.173890907093206,
-                "95.0" : 7.173890907093206,
-                "99.0" : 7.173890907093206,
-                "99.9" : 7.173890907093206,
-                "99.99" : 7.173890907093206,
-                "99.999" : 7.173890907093206,
-                "99.9999" : 7.173890907093206,
-                "100.0" : 7.173890907093206
+                "0.0" : 7.002144783143064,
+                "50.0" : 7.002144783143064,
+                "90.0" : 7.002144783143064,
+                "95.0" : 7.002144783143064,
+                "99.0" : 7.002144783143064,
+                "99.9" : 7.002144783143064,
+                "99.99" : 7.002144783143064,
+                "99.999" : 7.002144783143064,
+                "99.9999" : 7.002144783143064,
+                "100.0" : 7.002144783143064
             },
             "scoreUnit" : "ns/op",
             "rawData" : [
                 [
-                    7.173890907093206
+                    7.002144783143064
                 ]
             ]
         },
@@ -158,13 +158,13 @@
         "mode" : "avgt",
         "threads" : 1,
         "forks" : 1,
-        "jvm" : "C:\\hostedtoolcache\\windows\\Java_jdkfile_jdk\\716163044\\x64\\bin\\java.exe",
+        "jvm" : "C:\\hostedtoolcache\\windows\\Java_jdkfile_jdk\\1587705024\\x64\\bin\\java.exe",
         "jvmArgs" : [
             "--enable-preview"
         ],
-        "jdkVersion" : "22-ea",
+        "jdkVersion" : "23-ea",
         "vmName" : "OpenJDK 64-Bit Server VM",
-        "vmVersion" : "22-ea+22-1754",
+        "vmVersion" : "23-ea+1-1",
         "warmupIterations" : 1,
         "warmupTime" : "1 s",
         "warmupBatchSize" : 1,
@@ -175,28 +175,28 @@
             "size" : "100"
         },
         "primaryMetric" : {
-            "score" : 7.156741712160263,
+            "score" : 6.989332954021153,
             "scoreError" : "NaN",
             "scoreConfidence" : [
                 "NaN",
                 "NaN"
             ],
             "scorePercentiles" : {
-                "0.0" : 7.156741712160263,
-                "50.0" : 7.156741712160263,
-                "90.0" : 7.156741712160263,
-                "95.0" : 7.156741712160263,
-                "99.0" : 7.156741712160263,
-                "99.9" : 7.156741712160263,
-                "99.99" : 7.156741712160263,
-                "99.999" : 7.156741712160263,
-                "99.9999" : 7.156741712160263,
-                "100.0" : 7.156741712160263
+                "0.0" : 6.989332954021153,
+                "50.0" : 6.989332954021153,
+                "90.0" : 6.989332954021153,
+                "95.0" : 6.989332954021153,
+                "99.0" : 6.989332954021153,
+                "99.9" : 6.989332954021153,
+                "99.99" : 6.989332954021153,
+                "99.999" : 6.989332954021153,
+                "99.9999" : 6.989332954021153,
+                "100.0" : 6.989332954021153
             },
             "scoreUnit" : "ns/op",
             "rawData" : [
                 [
-                    7.156741712160263
+                    6.989332954021153
                 ]
             ]
         },
@@ -209,13 +209,13 @@
         "mode" : "avgt",
         "threads" : 1,
         "forks" : 1,
-        "jvm" : "C:\\hostedtoolcache\\windows\\Java_jdkfile_jdk\\716163044\\x64\\bin\\java.exe",
+        "jvm" : "C:\\hostedtoolcache\\windows\\Java_jdkfile_jdk\\1587705024\\x64\\bin\\java.exe",
         "jvmArgs" : [
             "--enable-preview"
         ],
-        "jdkVersion" : "22-ea",
+        "jdkVersion" : "23-ea",
         "vmName" : "OpenJDK 64-Bit Server VM",
-        "vmVersion" : "22-ea+22-1754",
+        "vmVersion" : "23-ea+1-1",
         "warmupIterations" : 1,
         "warmupTime" : "1 s",
         "warmupBatchSize" : 1,
@@ -226,28 +226,28 @@
             "size" : "1000"
         },
         "primaryMetric" : {
-            "score" : 7.175146237166514,
+            "score" : 6.966219563378319,
             "scoreError" : "NaN",
             "scoreConfidence" : [
                 "NaN",
                 "NaN"
             ],
             "scorePercentiles" : {
-                "0.0" : 7.175146237166514,
-                "50.0" : 7.175146237166514,
-                "90.0" : 7.175146237166514,
-                "95.0" : 7.175146237166514,
-                "99.0" : 7.175146237166514,
-                "99.9" : 7.175146237166514,
-                "99.99" : 7.175146237166514,
-                "99.999" : 7.175146237166514,
-                "99.9999" : 7.175146237166514,
-                "100.0" : 7.175146237166514
+                "0.0" : 6.966219563378319,
+                "50.0" : 6.966219563378319,
+                "90.0" : 6.966219563378319,
+                "95.0" : 6.966219563378319,
+                "99.0" : 6.966219563378319,
+                "99.9" : 6.966219563378319,
+                "99.99" : 6.966219563378319,
+                "99.999" : 6.966219563378319,
+                "99.9999" : 6.966219563378319,
+                "100.0" : 6.966219563378319
             },
             "scoreUnit" : "ns/op",
             "rawData" : [
                 [
-                    7.175146237166514
+                    6.966219563378319
                 ]
             ]
         },
@@ -260,13 +260,13 @@
         "mode" : "avgt",
         "threads" : 1,
         "forks" : 1,
-        "jvm" : "C:\\hostedtoolcache\\windows\\Java_jdkfile_jdk\\716163044\\x64\\bin\\java.exe",
+        "jvm" : "C:\\hostedtoolcache\\windows\\Java_jdkfile_jdk\\1587705024\\x64\\bin\\java.exe",
         "jvmArgs" : [
             "--enable-preview"
         ],
-        "jdkVersion" : "22-ea",
+        "jdkVersion" : "23-ea",
         "vmName" : "OpenJDK 64-Bit Server VM",
-        "vmVersion" : "22-ea+22-1754",
+        "vmVersion" : "23-ea+1-1",
         "warmupIterations" : 1,
         "warmupTime" : "1 s",
         "warmupBatchSize" : 1,
@@ -277,28 +277,28 @@
             "size" : "10000"
         },
         "primaryMetric" : {
-            "score" : 7.172571102963023,
+            "score" : 6.979604860899785,
             "scoreError" : "NaN",
             "scoreConfidence" : [
                 "NaN",
                 "NaN"
             ],
             "scorePercentiles" : {
-                "0.0" : 7.172571102963023,
-                "50.0" : 7.172571102963023,
-                "90.0" : 7.172571102963023,
-                "95.0" : 7.172571102963023,
-                "99.0" : 7.172571102963023,
-                "99.9" : 7.172571102963023,
-                "99.99" : 7.172571102963023,
-                "99.999" : 7.172571102963023,
-                "99.9999" : 7.172571102963023,
-                "100.0" : 7.172571102963023
+                "0.0" : 6.979604860899785,
+                "50.0" : 6.979604860899785,
+                "90.0" : 6.979604860899785,
+                "95.0" : 6.979604860899785,
+                "99.0" : 6.979604860899785,
+                "99.9" : 6.979604860899785,
+                "99.99" : 6.979604860899785,
+                "99.999" : 6.979604860899785,
+                "99.9999" : 6.979604860899785,
+                "100.0" : 6.979604860899785
             },
             "scoreUnit" : "ns/op",
             "rawData" : [
                 [
-                    7.172571102963023
+                    6.979604860899785
                 ]
             ]
         },
@@ -311,13 +311,13 @@
         "mode" : "avgt",
         "threads" : 1,
         "forks" : 1,
-        "jvm" : "C:\\hostedtoolcache\\windows\\Java_jdkfile_jdk\\716163044\\x64\\bin\\java.exe",
+        "jvm" : "C:\\hostedtoolcache\\windows\\Java_jdkfile_jdk\\1587705024\\x64\\bin\\java.exe",
         "jvmArgs" : [
             "--enable-preview"
         ],
-        "jdkVersion" : "22-ea",
+        "jdkVersion" : "23-ea",
         "vmName" : "OpenJDK 64-Bit Server VM",
-        "vmVersion" : "22-ea+22-1754",
+        "vmVersion" : "23-ea+1-1",
         "warmupIterations" : 1,
         "warmupTime" : "1 s",
         "warmupBatchSize" : 1,
@@ -328,28 +328,28 @@
             "size" : "100"
         },
         "primaryMetric" : {
-            "score" : 6.361252691670429,
+            "score" : 6.054347233456583,
             "scoreError" : "NaN",
             "scoreConfidence" : [
                 "NaN",
                 "NaN"
             ],
             "scorePercentiles" : {
-                "0.0" : 6.361252691670429,
-                "50.0" : 6.361252691670429,
-                "90.0" : 6.361252691670429,
-                "95.0" : 6.361252691670429,
-                "99.0" : 6.361252691670429,
-                "99.9" : 6.361252691670429,
-                "99.99" : 6.361252691670429,
-                "99.999" : 6.361252691670429,
-                "99.9999" : 6.361252691670429,
-                "100.0" : 6.361252691670429
+                "0.0" : 6.054347233456583,
+                "50.0" : 6.054347233456583,
+                "90.0" : 6.054347233456583,
+                "95.0" : 6.054347233456583,
+                "99.0" : 6.054347233456583,
+                "99.9" : 6.054347233456583,
+                "99.99" : 6.054347233456583,
+                "99.999" : 6.054347233456583,
+                "99.9999" : 6.054347233456583,
+                "100.0" : 6.054347233456583
             },
             "scoreUnit" : "ns/op",
             "rawData" : [
                 [
-                    6.361252691670429
+                    6.054347233456583
                 ]
             ]
         },
@@ -362,13 +362,13 @@
         "mode" : "avgt",
         "threads" : 1,
         "forks" : 1,
-        "jvm" : "C:\\hostedtoolcache\\windows\\Java_jdkfile_jdk\\716163044\\x64\\bin\\java.exe",
+        "jvm" : "C:\\hostedtoolcache\\windows\\Java_jdkfile_jdk\\1587705024\\x64\\bin\\java.exe",
         "jvmArgs" : [
             "--enable-preview"
         ],
-        "jdkVersion" : "22-ea",
+        "jdkVersion" : "23-ea",
         "vmName" : "OpenJDK 64-Bit Server VM",
-        "vmVersion" : "22-ea+22-1754",
+        "vmVersion" : "23-ea+1-1",
         "warmupIterations" : 1,
         "warmupTime" : "1 s",
         "warmupBatchSize" : 1,
@@ -379,28 +379,28 @@
             "size" : "1000"
         },
         "primaryMetric" : {
-            "score" : 58.89053881718596,
+            "score" : 56.285228557977604,
             "scoreError" : "NaN",
             "scoreConfidence" : [
                 "NaN",
                 "NaN"
             ],
             "scorePercentiles" : {
-                "0.0" : 58.89053881718596,
-                "50.0" : 58.89053881718596,
-                "90.0" : 58.89053881718596,
-                "95.0" : 58.89053881718596,
-                "99.0" : 58.89053881718596,
-                "99.9" : 58.89053881718596,
-                "99.99" : 58.89053881718596,
-                "99.999" : 58.89053881718596,
-                "99.9999" : 58.89053881718596,
-                "100.0" : 58.89053881718596
+                "0.0" : 56.285228557977604,
+                "50.0" : 56.285228557977604,
+                "90.0" : 56.285228557977604,
+                "95.0" : 56.285228557977604,
+                "99.0" : 56.285228557977604,
+                "99.9" : 56.285228557977604,
+                "99.99" : 56.285228557977604,
+                "99.999" : 56.285228557977604,
+                "99.9999" : 56.285228557977604,
+                "100.0" : 56.285228557977604
             },
             "scoreUnit" : "ns/op",
             "rawData" : [
                 [
-                    58.89053881718596
+                    56.285228557977604
                 ]
             ]
         },
@@ -413,13 +413,13 @@
         "mode" : "avgt",
         "threads" : 1,
         "forks" : 1,
-        "jvm" : "C:\\hostedtoolcache\\windows\\Java_jdkfile_jdk\\716163044\\x64\\bin\\java.exe",
+        "jvm" : "C:\\hostedtoolcache\\windows\\Java_jdkfile_jdk\\1587705024\\x64\\bin\\java.exe",
         "jvmArgs" : [
             "--enable-preview"
         ],
-        "jdkVersion" : "22-ea",
+        "jdkVersion" : "23-ea",
         "vmName" : "OpenJDK 64-Bit Server VM",
-        "vmVersion" : "22-ea+22-1754",
+        "vmVersion" : "23-ea+1-1",
         "warmupIterations" : 1,
         "warmupTime" : "1 s",
         "warmupBatchSize" : 1,
@@ -430,28 +430,28 @@
             "size" : "10000"
         },
         "primaryMetric" : {
-            "score" : 603.459071270934,
+            "score" : 591.5685764739644,
             "scoreError" : "NaN",
             "scoreConfidence" : [
                 "NaN",
                 "NaN"
             ],
             "scorePercentiles" : {
-                "0.0" : 603.459071270934,
-                "50.0" : 603.459071270934,
-                "90.0" : 603.459071270934,
-                "95.0" : 603.459071270934,
-                "99.0" : 603.459071270934,
-                "99.9" : 603.459071270934,
-                "99.99" : 603.459071270934,
-                "99.999" : 603.459071270934,
-                "99.9999" : 603.459071270934,
-                "100.0" : 603.459071270934
+                "0.0" : 591.5685764739644,
+                "50.0" : 591.5685764739644,
+                "90.0" : 591.5685764739644,
+                "95.0" : 591.5685764739644,
+                "99.0" : 591.5685764739644,
+                "99.9" : 591.5685764739644,
+                "99.99" : 591.5685764739644,
+                "99.999" : 591.5685764739644,
+                "99.9999" : 591.5685764739644,
+                "100.0" : 591.5685764739644
             },
             "scoreUnit" : "ns/op",
             "rawData" : [
                 [
-                    603.459071270934
+                    591.5685764739644
                 ]
             ]
         },
@@ -464,13 +464,13 @@
         "mode" : "avgt",
         "threads" : 1,
         "forks" : 1,
-        "jvm" : "C:\\hostedtoolcache\\windows\\Java_jdkfile_jdk\\716163044\\x64\\bin\\java.exe",
+        "jvm" : "C:\\hostedtoolcache\\windows\\Java_jdkfile_jdk\\1587705024\\x64\\bin\\java.exe",
         "jvmArgs" : [
             "--enable-preview"
         ],
-        "jdkVersion" : "22-ea",
+        "jdkVersion" : "23-ea",
         "vmName" : "OpenJDK 64-Bit Server VM",
-        "vmVersion" : "22-ea+22-1754",
+        "vmVersion" : "23-ea+1-1",
         "warmupIterations" : 1,
         "warmupTime" : "1 s",
         "warmupBatchSize" : 1,
@@ -481,28 +481,28 @@
             "size" : "100"
         },
         "primaryMetric" : {
-            "score" : 4.378647096414496,
+            "score" : 7.6472585934717685,
             "scoreError" : "NaN",
             "scoreConfidence" : [
                 "NaN",
                 "NaN"
             ],
             "scorePercentiles" : {
-                "0.0" : 4.378647096414496,
-                "50.0" : 4.378647096414496,
-                "90.0" : 4.378647096414496,
-                "95.0" : 4.378647096414496,
-                "99.0" : 4.378647096414496,
-                "99.9" : 4.378647096414496,
-                "99.99" : 4.378647096414496,
-                "99.999" : 4.378647096414496,
-                "99.9999" : 4.378647096414496,
-                "100.0" : 4.378647096414496
+                "0.0" : 7.6472585934717685,
+                "50.0" : 7.6472585934717685,
+                "90.0" : 7.6472585934717685,
+                "95.0" : 7.6472585934717685,
+                "99.0" : 7.6472585934717685,
+                "99.9" : 7.6472585934717685,
+                "99.99" : 7.6472585934717685,
+                "99.999" : 7.6472585934717685,
+                "99.9999" : 7.6472585934717685,
+                "100.0" : 7.6472585934717685
             },
             "scoreUnit" : "ns/op",
             "rawData" : [
                 [
-                    4.378647096414496
+                    7.6472585934717685
                 ]
             ]
         },
@@ -515,13 +515,13 @@
         "mode" : "avgt",
         "threads" : 1,
         "forks" : 1,
-        "jvm" : "C:\\hostedtoolcache\\windows\\Java_jdkfile_jdk\\716163044\\x64\\bin\\java.exe",
+        "jvm" : "C:\\hostedtoolcache\\windows\\Java_jdkfile_jdk\\1587705024\\x64\\bin\\java.exe",
         "jvmArgs" : [
             "--enable-preview"
         ],
-        "jdkVersion" : "22-ea",
+        "jdkVersion" : "23-ea",
         "vmName" : "OpenJDK 64-Bit Server VM",
-        "vmVersion" : "22-ea+22-1754",
+        "vmVersion" : "23-ea+1-1",
         "warmupIterations" : 1,
         "warmupTime" : "1 s",
         "warmupBatchSize" : 1,
@@ -532,28 +532,28 @@
             "size" : "1000"
         },
         "primaryMetric" : {
-            "score" : 4.367713307867045,
+            "score" : 7.522701497300111,
             "scoreError" : "NaN",
             "scoreConfidence" : [
                 "NaN",
                 "NaN"
             ],
             "scorePercentiles" : {
-                "0.0" : 4.367713307867045,
-                "50.0" : 4.367713307867045,
-                "90.0" : 4.367713307867045,
-                "95.0" : 4.367713307867045,
-                "99.0" : 4.367713307867045,
-                "99.9" : 4.367713307867045,
-                "99.99" : 4.367713307867045,
-                "99.999" : 4.367713307867045,
-                "99.9999" : 4.367713307867045,
-                "100.0" : 4.367713307867045
+                "0.0" : 7.522701497300111,
+                "50.0" : 7.522701497300111,
+                "90.0" : 7.522701497300111,
+                "95.0" : 7.522701497300111,
+                "99.0" : 7.522701497300111,
+                "99.9" : 7.522701497300111,
+                "99.99" : 7.522701497300111,
+                "99.999" : 7.522701497300111,
+                "99.9999" : 7.522701497300111,
+                "100.0" : 7.522701497300111
             },
             "scoreUnit" : "ns/op",
             "rawData" : [
                 [
-                    4.367713307867045
+                    7.522701497300111
                 ]
             ]
         },
@@ -566,13 +566,13 @@
         "mode" : "avgt",
         "threads" : 1,
         "forks" : 1,
-        "jvm" : "C:\\hostedtoolcache\\windows\\Java_jdkfile_jdk\\716163044\\x64\\bin\\java.exe",
+        "jvm" : "C:\\hostedtoolcache\\windows\\Java_jdkfile_jdk\\1587705024\\x64\\bin\\java.exe",
         "jvmArgs" : [
             "--enable-preview"
         ],
-        "jdkVersion" : "22-ea",
+        "jdkVersion" : "23-ea",
         "vmName" : "OpenJDK 64-Bit Server VM",
-        "vmVersion" : "22-ea+22-1754",
+        "vmVersion" : "23-ea+1-1",
         "warmupIterations" : 1,
         "warmupTime" : "1 s",
         "warmupBatchSize" : 1,
@@ -583,28 +583,28 @@
             "size" : "10000"
         },
         "primaryMetric" : {
-            "score" : 4.371997720574182,
+            "score" : 7.486889044991863,
             "scoreError" : "NaN",
             "scoreConfidence" : [
                 "NaN",
                 "NaN"
             ],
             "scorePercentiles" : {
-                "0.0" : 4.371997720574182,
-                "50.0" : 4.371997720574182,
-                "90.0" : 4.371997720574182,
-                "95.0" : 4.371997720574182,
-                "99.0" : 4.371997720574182,
-                "99.9" : 4.371997720574182,
-                "99.99" : 4.371997720574182,
-                "99.999" : 4.371997720574182,
-                "99.9999" : 4.371997720574182,
-                "100.0" : 4.371997720574182
+                "0.0" : 7.486889044991863,
+                "50.0" : 7.486889044991863,
+                "90.0" : 7.486889044991863,
+                "95.0" : 7.486889044991863,
+                "99.0" : 7.486889044991863,
+                "99.9" : 7.486889044991863,
+                "99.99" : 7.486889044991863,
+                "99.999" : 7.486889044991863,
+                "99.9999" : 7.486889044991863,
+                "100.0" : 7.486889044991863
             },
             "scoreUnit" : "ns/op",
             "rawData" : [
                 [
-                    4.371997720574182
+                    7.486889044991863
                 ]
             ]
         },
@@ -617,13 +617,13 @@
         "mode" : "avgt",
         "threads" : 1,
         "forks" : 1,
-        "jvm" : "C:\\hostedtoolcache\\windows\\Java_jdkfile_jdk\\716163044\\x64\\bin\\java.exe",
+        "jvm" : "C:\\hostedtoolcache\\windows\\Java_jdkfile_jdk\\1587705024\\x64\\bin\\java.exe",
         "jvmArgs" : [
             "--enable-preview"
         ],
-        "jdkVersion" : "22-ea",
+        "jdkVersion" : "23-ea",
         "vmName" : "OpenJDK 64-Bit Server VM",
-        "vmVersion" : "22-ea+22-1754",
+        "vmVersion" : "23-ea+1-1",
         "warmupIterations" : 1,
         "warmupTime" : "1 s",
         "warmupBatchSize" : 1,
@@ -634,28 +634,130 @@
             "tokens" : "10"
         },
         "primaryMetric" : {
-            "score" : 12.07767228401185,
+            "score" : 11.985559209810484,
             "scoreError" : "NaN",
             "scoreConfidence" : [
                 "NaN",
                 "NaN"
             ],
             "scorePercentiles" : {
-                "0.0" : 12.07767228401185,
-                "50.0" : 12.07767228401185,
-                "90.0" : 12.07767228401185,
-                "95.0" : 12.07767228401185,
-                "99.0" : 12.07767228401185,
-                "99.9" : 12.07767228401185,
-                "99.99" : 12.07767228401185,
-                "99.999" : 12.07767228401185,
-                "99.9999" : 12.07767228401185,
-                "100.0" : 12.07767228401185
+                "0.0" : 11.985559209810484,
+                "50.0" : 11.985559209810484,
+                "90.0" : 11.985559209810484,
+                "95.0" : 11.985559209810484,
+                "99.0" : 11.985559209810484,
+                "99.9" : 11.985559209810484,
+                "99.99" : 11.985559209810484,
+                "99.999" : 11.985559209810484,
+                "99.9999" : 11.985559209810484,
+                "100.0" : 11.985559209810484
             },
             "scoreUnit" : "ns/op",
             "rawData" : [
                 [
-                    12.07767228401185
+                    11.985559209810484
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "dev.suresh.BenchMain.test",
+        "mode" : "ss",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\hostedtoolcache\\windows\\Java_jdkfile_jdk\\1587705024\\x64\\bin\\java.exe",
+        "jvmArgs" : [
+            "--enable-preview"
+        ],
+        "jdkVersion" : "23-ea",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "23-ea+1-1",
+        "warmupIterations" : 2,
+        "warmupTime" : "single-shot",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "single-shot",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "max" : "10",
+            "min" : "2"
+        },
+        "primaryMetric" : {
+            "score" : 9.342E-4,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 7.747E-4,
+                "50.0" : 9.342E-4,
+                "90.0" : 0.0010937,
+                "95.0" : 0.0010937,
+                "99.0" : 0.0010937,
+                "99.9" : 0.0010937,
+                "99.99" : 0.0010937,
+                "99.999" : 0.0010937,
+                "99.9999" : 0.0010937,
+                "100.0" : 0.0010937
+            },
+            "scoreUnit" : "s/op",
+            "rawData" : [
+                [
+                    0.0010937,
+                    7.747E-4
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "dev.suresh.Concurrent.test",
+        "mode" : "ss",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\hostedtoolcache\\windows\\Java_jdkfile_jdk\\1587705024\\x64\\bin\\java.exe",
+        "jvmArgs" : [
+            "--enable-preview"
+        ],
+        "jdkVersion" : "23-ea",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "23-ea+1-1",
+        "warmupIterations" : 2,
+        "warmupTime" : "single-shot",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 2,
+        "measurementTime" : "single-shot",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 1.045E-5,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 9.6E-6,
+                "50.0" : 1.045E-5,
+                "90.0" : 1.13E-5,
+                "95.0" : 1.13E-5,
+                "99.0" : 1.13E-5,
+                "99.9" : 1.13E-5,
+                "99.99" : 1.13E-5,
+                "99.999" : 1.13E-5,
+                "99.9999" : 1.13E-5,
+                "100.0" : 1.13E-5
+            },
+            "scoreUnit" : "s/op",
+            "rawData" : [
+                [
+                    9.6E-6,
+                    1.13E-5
                 ]
             ]
         },
