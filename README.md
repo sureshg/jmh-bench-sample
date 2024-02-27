@@ -26,6 +26,13 @@ $ java --enable-preview -jar target/benchmarks.jar -lrf
 $ java --enable-preview -jar target/benchmarks.jar -rf json
 ```
 
+- #### :running: Run with Async-Profiler
+
+```bash
+$ java --enable-preview -jar target/benchmarks.jar \
+       -prof "async:libPath=/path/to/async-profiler-3.0/lib/libasyncProfiler.dylib;output=jfr;rawCommand=features=vtable"
+```
+
 - #### :running: Run with profiling (requires [hsdis][hsdis])
 
 ```bash
