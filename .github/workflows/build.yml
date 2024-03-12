@@ -206,7 +206,7 @@ jobs:
 
       # Alternatives are listed here - https://github.com/actions/create-release
       - name: Github Release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           # name: Release ${{ steps.get-version.outputs.tag }}
           # tag_name: ${{ github.ref }}
