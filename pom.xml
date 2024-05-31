@@ -45,7 +45,7 @@
         <!-- plugin versions -->
         <compiler.plugin.version>3.13.0</compiler.plugin.version>
         <maven.toolchains.plugin>3.2.0</maven.toolchains.plugin>
-        <shade.plugin.version>3.5.3</shade.plugin.version>
+        <shade.plugin.version>3.6.0</shade.plugin.version>
         <enforcer.plugin.version>3.5.0</enforcer.plugin.version>
         <clean.plugin.version>3.3.2</clean.plugin.version>
         <deploy.plugin.version>3.1.2</deploy.plugin.version>
