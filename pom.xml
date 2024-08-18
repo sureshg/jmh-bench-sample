@@ -53,7 +53,7 @@
         <jar.plugin.version>3.4.2</jar.plugin.version>
         <javadoc.plugin.version>3.8.0</javadoc.plugin.version>
         <resources.plugin.version>3.3.1</resources.plugin.version>
-        <site.plugin.version>3.12.1</site.plugin.version>
+        <site.plugin.version>3.20.0</site.plugin.version>
         <source.plugin.version>3.3.1</source.plugin.version>
         <surefire.plugin.version>3.3.1</surefire.plugin.version>
         <execjar.plugin.version>1.5.0</execjar.plugin.version>
