@@ -26,10 +26,10 @@
                     <name>${env.GITHUB_ACTOR}</name>
                     <url>https://maven.pkg.github.com/${env.GITHUB_REPOSITORY}</url>
                     <releases>
-                        <enabled>true</enabled>
+                        <enabled>false</enabled>
                     </releases>
                     <snapshots>
-                        <enabled>true</enabled>
+                        <enabled>false</enabled>
                     </snapshots>
                 </repository>
             </repositories>
