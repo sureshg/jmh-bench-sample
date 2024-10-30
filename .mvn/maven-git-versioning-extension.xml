@@ -10,7 +10,7 @@
 
         <ref type="branch">
             <pattern>.+</pattern>
-            <version>${describe.tag.version.core}-SNAPSHOT</version>
+            <version>${describe.tag.version.core}-${ref}-SNAPSHOT</version>
             <describeTagPattern>v[0-9].+</describeTagPattern>
         </ref>
 
