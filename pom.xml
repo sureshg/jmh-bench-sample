@@ -23,7 +23,7 @@
         <!-- Compiler versions -->
         <jdk.version>25</jdk.version>
         <release.version>25</release.version>
-        <maven.version>3.8</maven.version>
+        <maven.version>3.9</maven.version>
         <maven.compiler.release>${release.version}</maven.compiler.release>
         <!--<maven.compiler.source>${release.version}</maven.compiler.source>-->
         <!--<maven.compiler.target>${release.version}</maven.compiler.target>-->
