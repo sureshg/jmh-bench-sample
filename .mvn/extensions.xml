@@ -6,11 +6,15 @@
         <artifactId>maven-git-versioning-extension</artifactId>
         <version>9.10.2</version>
     </extension>
-
     <extension>
-        <groupId>com.tisonkun.os</groupId>
-        <artifactId>os-detector-maven-plugin</artifactId>
-        <version>0.6.0</version>
+        <groupId>eu.maveniverse.maven.nisse</groupId>
+        <artifactId>extension</artifactId>
+        <version>0.4.0</version>
+    </extension>
+    <extension>
+        <groupId>org.apache.maven.extensions</groupId>
+        <artifactId>maven-build-cache-extension</artifactId>
+        <version>1.2.0</version>
     </extension>
 
     <!--extension>
@@ -18,13 +22,6 @@
         <artifactId>maven-hocon-extension</artifactId>
         <version>@project.version@</version>
     </extension-->
-
-    <!--extension>
-        <groupId>org.apache.maven.extensions</groupId>
-        <artifactId>maven-build-cache-extension</artifactId>
-        <version>1.0.1</version>
-    </extension-->
-
     <!--extension>
         <groupId>com.soebes.maven.extensions</groupId>
         <artifactId>maven-buildtime-profiler</artifactId>
