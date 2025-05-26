@@ -29,10 +29,10 @@
         <!--<maven.compiler.target>${release.version}</maven.compiler.target>-->
 
         <!-- Kotlin Compiler versions -->
-        <kotlin.version>2.1.21</kotlin.version>
+        <kotlin.version>2.2.0-RC</kotlin.version>
         <kotlin.compiler.jvmTarget>21</kotlin.compiler.jvmTarget>
-        <kotlin.compiler.apiVersion>2.1</kotlin.compiler.apiVersion>
-        <kotlin.compiler.languageVersion>2.1</kotlin.compiler.languageVersion>
+        <kotlin.compiler.apiVersion>2.2</kotlin.compiler.apiVersion>
+        <kotlin.compiler.languageVersion>2.2</kotlin.compiler.languageVersion>
         <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
 
         <!-- Dependency versions -->
