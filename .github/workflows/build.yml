@@ -122,7 +122,7 @@ jobs:
         id: maven-deploy
         if: env.GITHUB_DEPLOY == 'true' && runner.os == 'Linux' && github.event_name == 'push'
         run: |
-          ./mvnw --settings .mvn/settings.xml clean deploy
+          ./mvnw --settings .mvn/settings.xml clean package
         env:
           GITHUB_USER: ${{ github.repository_owner }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
