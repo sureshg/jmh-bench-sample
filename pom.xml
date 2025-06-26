@@ -19,7 +19,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <project.build.outputTimestamp>2020-04-19T01:51:00Z</project.build.outputTimestamp>
-        <maven.build.cache.enabled>true</maven.build.cache.enabled>
+        <maven.build.cache.enabled>false</maven.build.cache.enabled>
         <!--<maven.maven3Personality>true</maven.maven3Personality>-->
 
         <!-- Compiler versions -->
