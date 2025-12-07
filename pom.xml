@@ -23,8 +23,8 @@
         <!--<maven.maven3Personality>true</maven.maven3Personality>-->
 
         <!-- Compiler versions -->
-        <jdk.version>26</jdk.version>
-        <release.version>26</release.version>
+        <jdk.version>27</jdk.version>
+        <release.version>27</release.version>
         <maven.version>3.9</maven.version>
         <maven.compiler.release>${release.version}</maven.compiler.release>
         <!--<maven.compiler.source>${release.version}</maven.compiler.source>-->
