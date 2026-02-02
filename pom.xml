@@ -45,7 +45,7 @@
         <uberjar.name>benchmarks</uberjar.name>
 
         <!-- plugin versions -->
-        <compiler.plugin.version>3.14.1</compiler.plugin.version>
+        <compiler.plugin.version>3.15.0</compiler.plugin.version>
         <maven.toolchains.plugin>3.2.0</maven.toolchains.plugin>
         <shade.plugin.version>3.6.1</shade.plugin.version>
         <enforcer.plugin.version>3.6.2</enforcer.plugin.version>
