@@ -15,7 +15,7 @@ import org.openjdk.jmh.annotations.*;
 @State(Scope.Benchmark)
 public class Concurrent {
 
-  public static void main(String[] args) {
+  static void main(String[] args) {
     System.out.println("Help");
   }
 

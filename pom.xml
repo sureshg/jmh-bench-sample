@@ -31,10 +31,10 @@
         <!--<maven.compiler.target>${release.version}</maven.compiler.target>-->
 
         <!-- Kotlin Compiler versions -->
-        <kotlin.version>2.3.10</kotlin.version>
-        <kotlin.compiler.jvmTarget>21</kotlin.compiler.jvmTarget>
-        <kotlin.compiler.apiVersion>2.2</kotlin.compiler.apiVersion>
-        <kotlin.compiler.languageVersion>2.2</kotlin.compiler.languageVersion>
+        <kotlin.version>2.3.20-RC2</kotlin.version>
+        <kotlin.compiler.jvmTarget>25</kotlin.compiler.jvmTarget>
+        <kotlin.compiler.apiVersion>2.3</kotlin.compiler.apiVersion>
+        <kotlin.compiler.languageVersion>2.3</kotlin.compiler.languageVersion>
         <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
 
         <!-- Dependency versions -->
@@ -164,15 +164,21 @@
                 <version>${jmh.version}</version>
                 <scope>provided</scope>
             </dependency>
+            <dependency>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-reflect</artifactId>
+                <version>${kotlin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-test-junit5</artifactId>
+                <scope>test</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
     <!-- Dependencies -->
     <dependencies>
-        <dependency>
-            <groupId>org.jetbrains.kotlin</groupId>
-            <artifactId>kotlin-stdlib</artifactId>
-        </dependency>
         <dependency>
             <groupId>org.openjdk.jmh</groupId>
             <artifactId>jmh-core</artifactId>
@@ -449,13 +455,12 @@
             <plugin>
                 <groupId>org.jetbrains.kotlin</groupId>
                 <artifactId>kotlin-maven-plugin</artifactId>
-                <!-- https://kotlinlang.org/docs/maven.html#specifying-compiler-options -->
+                <extensions>true</extensions>
                 <configuration>
                     <args>
                         <arg>-progressive</arg>
                         <arg>-java-parameters</arg>
                         <arg>-Xjsr305=strict</arg>
-                        <arg>-Xjvm-default=all</arg>
                     </args>
                     <compilerPlugins>
                         <plugin>all-open</plugin>
