@@ -62,6 +62,7 @@ $ ./mvnw wrapper:wrapper -Dmaven=3.9.2
 $ ./mvnw --version
 $ ./mvnw clean versions:display-dependency-updates versions:display-plugin-updates versions:display-property-updates
 $ ./mvnw help:evaluate -Dexpression=project.version -q -DforceStdout
+$ ./mvnw pilot:pilot
 ```
 
 ##### :copyright: Credits

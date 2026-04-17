@@ -445,6 +445,11 @@
                         </execution>
                     </executions>
                 </plugin>
+                <plugin>
+                    <groupId>eu.maveniverse.maven.plugins</groupId>
+                    <artifactId>pilot</artifactId>
+                    <version>0.1.0</version>
+                </plugin>
             </plugins>
         </pluginManagement>
 
